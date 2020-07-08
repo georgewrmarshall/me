@@ -8,6 +8,7 @@ export const StyledHero = styled.header`
     height: 100vh;
     background-color: ${props.theme.hero.backgroundColor};
     padding: 0 16px;
+    position: relative;
 
     @media ${props.theme.maxWidth.md} {
       flex-direction: column-reverse;
@@ -16,6 +17,18 @@ export const StyledHero = styled.header`
 
     @media ${props.theme.minWidth.md} {
       padding: 0 16%;
+    }
+
+    canvas {
+      z-index: 2;
+      position: absolute;
+      pointer-events: none;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      width: 100vw;
+      height: 100vh;
     }
 
     > div {

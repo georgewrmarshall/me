@@ -32,13 +32,13 @@ export const Hero = ({ ...props }) => {
   const [count, setCount] = useState(0);
   return (
     <>
-      <Confetti
-        width={width}
-        height={height}
-        colors={confettiColors}
-        numberOfPieces={count}
-      />
       <StyledHero id="homeless" {...props}>
+        <Confetti
+          width={width}
+          height={height}
+          colors={confettiColors}
+          numberOfPieces={count}
+        />
         <div>
           <img className="profile" src={imgMe} alt="Me" />
         </div>

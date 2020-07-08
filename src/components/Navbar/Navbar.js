@@ -15,6 +15,10 @@ export const Navbar = ({ ...props }) => {
   const handleClickToggle = () => {
     setShow(!show);
   };
+  const handleSetSection = (section) => {
+    setShow(prevState => prevState ? setShow(false) : null);
+    return setSection(section);
+  }
   return (
     <StyledNavbar show={show} section={section} {...props}>
       <Container fluid>
@@ -29,7 +33,7 @@ export const Navbar = ({ ...props }) => {
                 hashSpy={true}
                 offset={-2}
                 duration={500}
-                onSetActive={() => setSection('homeless')}
+                onSetActive={() => handleSetSection('homeless')}
               >
                 Homeless
               </NavLink>
@@ -43,7 +47,7 @@ export const Navbar = ({ ...props }) => {
                 hashSpy={true}
                 offset={-2}
                 duration={500}
-                onSetActive={() => setSection('shitIveDone')}
+                onSetActive={() => handleSetSection('shitIveDone')}
               >
                 Shit I’ve Done
               </NavLink>
@@ -57,7 +61,7 @@ export const Navbar = ({ ...props }) => {
                 hashSpy={true}
                 offset={-2}
                 duration={500}
-                onSetActive={() => setSection('inflatedBullshit')}
+                onSetActive={() => handleSetSection('inflatedBullshit')}
               >
                 Inflated Bullshit
               </NavLink>
@@ -71,7 +75,7 @@ export const Navbar = ({ ...props }) => {
                 hashSpy={true}
                 offset={-2}
                 duration={500}
-                onSetActive={() => setSection('dontContactMe')}
+                onSetActive={() => handleSetSection('dontContactMe')}
               >
                 Don’t contact me
               </NavLink>
