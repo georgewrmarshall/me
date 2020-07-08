@@ -115,7 +115,7 @@ export const StyledHero = styled.header`
       }
     }
 
-    img {
+    .profile {
       position: absolute;
       bottom: 0;
       right: 16px;
@@ -137,42 +137,58 @@ export const StyledHero = styled.header`
     }
 
     a {
-      @media ${props.theme.maxWidth.md} {
-        display: none;
-      }
-      @media ${props.theme.minWidth.md} {
-        display: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 120px;
-        position: absolute;
-        bottom: 2rem;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        text-transform: uppercase;
-        font-family: ${props.theme.type.fontFamilyNav};
-        font-weight: 700;
-        font-size: 0.875rem;
-        letter-spacing: 0.15rem;
-        text-decoration: none;
-        line-height: 1.7;
-        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍆</text></svg>")
-            16 0,
-          auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      text-transform: uppercase;
+      font-family: ${props.theme.type.fontFamilyNav};
+      font-weight: 700;
+      font-size: 0.875rem;
+      letter-spacing: 0.15rem;
+      text-decoration: none;
+      line-height: 1.7;
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍆</text></svg>")
+          16 0,
+        auto;
 
+      @media ${props.theme.maxWidth.md} {
+        bottom: 0;
+        width: 280px;
+        letter-spacing: 0.085rem;
+        span {
+          width: 100%;
+          position: relative;
+          background-color: ${props.theme.colorsTheme.primary};
+          padding: 0.25rem;
+        }
+
+        br {
+          display: none;
+        }
+      }
+
+      @media ${props.theme.minWidth.md} {
         &:hover {
           img {
             transform: translate(-50%, 10px);
           }
         }
+      }
 
-        img {
-          width: 20px;
-          display: block;
-          transition: 0.3s;
+      img {
+        width: 20px;
+        display: block;
+        transition: 0.3s;
+
+        @media ${props.theme.maxWidth.md} {
+          padding: 0.25rem;
+          background-color: ${props.theme.colorsTheme.greenDark};
         }
       }
     }

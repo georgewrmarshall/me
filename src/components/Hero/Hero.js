@@ -40,7 +40,7 @@ export const Hero = ({ ...props }) => {
       />
       <StyledHero id="homeless" {...props}>
         <div>
-          <img src={imgMe} alt="Me" />
+          <img className="profile" src={imgMe} alt="Me" />
         </div>
         <div>
           <Display as="h1">
@@ -66,8 +66,11 @@ export const Hero = ({ ...props }) => {
           offset={-2}
           duration={500}
         >
-          <span>Scroll down <br/> to see my penis</span>
-          <img src={arrow} alt="scroll down"/>
+          <span>
+            Scroll down <br />
+            to see my penis
+          </span>
+          <img src={arrow} alt="scroll down" />
         </Link>
       </StyledHero>
     </>

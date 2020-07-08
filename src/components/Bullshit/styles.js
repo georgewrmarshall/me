@@ -60,7 +60,7 @@ export const StyledBullshit = styled.section`
 
         @media ${props.theme.maxWidth.md} {
           left: -16px;
-          max-width: 100%;
+          max-width: 288px;
         }
 
         @media ${props.theme.minWidth.md} {
