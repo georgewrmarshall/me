@@ -4,7 +4,7 @@ import { SEO, Layout, Navbar, Hero, Shit, Bullshit, Contact, Footer } from "../c
 
 const IndexPage = () => (
   <>
-    <SEO title="Home" />
+    <SEO title="Homeless" />
     <Layout>
       <Navbar />
       <Hero />

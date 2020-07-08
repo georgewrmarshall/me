@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 
 // Components
 import { NavLink } from '../NavLink';
@@ -77,7 +78,7 @@ export const Navbar = ({ ...props }) => {
             </li>
           </ul>
         </div>
-        <a className="brand" href="/">
+        <Link className="brand" to="/">
           <svg
             width="32"
             height="32"
@@ -94,7 +95,7 @@ export const Navbar = ({ ...props }) => {
           >
             <path d="M21.997 17.5046L32.6989 2.42378L29.4368 0.108887L18.7349 15.1897L3.09035 4.08776L0.775452 7.34985L16.42 18.4518L5.14986 34.3334L8.41195 36.6483L19.6821 20.7667L35 31.6368L37.3149 28.3747L21.997 17.5046Z" />
           </svg>
-        </a>
+        </Link>
         <button
           className="btn-menu-toggle"
           type="button"

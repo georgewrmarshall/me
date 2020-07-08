@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: '/anti-portfolio',
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `George Marshall - I don't give a fuck`,
+    description: `Sometimes you just can't be fucked.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -37,13 +38,13 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Playfair Display\:900` // you can also specify font weights and styles
+          `Playfair Display\:900`, // you can also specify font weights and styles
         ],
-        display: 'swap'
-      }
-    }
+        display: 'swap',
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

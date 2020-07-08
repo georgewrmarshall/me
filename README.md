@@ -1,4 +1,4 @@
 # The Anti Portfolio
 Sometimes you just can't be fucked.
 
-![](https://user-images.githubusercontent.com/8112138/86862903-01b15580-c07f-11ea-95d5-a29db8d16cab.jpg)
+![](https://user-images.githubusercontent.com/8112138/86865318-a2a20f80-c083-11ea-85bd-107d1aec9da8.png)
