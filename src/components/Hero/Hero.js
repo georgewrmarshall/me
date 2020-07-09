@@ -33,12 +33,6 @@ export const Hero = ({ ...props }) => {
   return (
     <>
       <StyledHero id="homeless" {...props}>
-        <Confetti
-          width={width}
-          height={height}
-          colors={confettiColors}
-          numberOfPieces={count}
-        />
         <div>
           <img className="profile" src={imgMe} alt="Me" />
         </div>
@@ -72,6 +66,12 @@ export const Hero = ({ ...props }) => {
           </span>
           <img src={arrow} alt="scroll down" />
         </Link>
+        <Confetti
+          width={width}
+          height={height}
+          colors={confettiColors}
+          numberOfPieces={count}
+        />
       </StyledHero>
     </>
   );
