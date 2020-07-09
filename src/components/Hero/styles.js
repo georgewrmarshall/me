@@ -189,7 +189,7 @@ export const StyledHero = styled.header`
       @media ${props.theme.minWidth.md} {
         &:hover {
           img {
-            transform: translate(-50%, 10px);
+            transform: translateY(10px);
           }
         }
       }
