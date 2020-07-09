@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 // Styles
 import { StyledContainer } from "./styles";
 
-export const Container = ({ children, fluid, ...props }) => {
+export const Container = ({ children, ...props }) => {
   return (
-    <StyledContainer fluid={fluid} {...props}>
+    <StyledContainer {...props}>
       {children}
     </StyledContainer>
   );

@@ -17,8 +17,4 @@ NavLink.propTypes = {
    * The content of the NavLink
    */
   children: PropTypes.node,
-  /**
-   * Whether the link is active
-   */
-  active: PropTypes.bool,
 };

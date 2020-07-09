@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 // Components
@@ -113,11 +112,4 @@ export const Navbar = ({ ...props }) => {
       </Container>
     </StyledNavbar>
   );
-};
-
-Navbar.propTypes = {
-  /**
-   * The content of the Navbar
-   */
-  children: PropTypes.node,
 };

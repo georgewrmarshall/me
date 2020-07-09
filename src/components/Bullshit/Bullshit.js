@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 // Components
 import { Display, Headline, Body } from '../Type';
@@ -48,15 +47,4 @@ export const Bullshit = ({ ...props }) => {
       </Container>
     </StyledBullshit>
   );
-};
-
-Bullshit.propTypes = {
-  /**
-   * The header of the page
-   */
-  header: PropTypes.string,
-  /**
-   * The description of the page
-   */
-  description: PropTypes.string,
 };

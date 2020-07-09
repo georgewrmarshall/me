@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import useWindowSize from 'react-use/lib/useWindowSize';
 import Confetti from 'react-confetti';
 import { Link } from 'react-scroll';
@@ -75,15 +74,4 @@ export const Hero = ({ ...props }) => {
       </StyledHero>
     </>
   );
-};
-
-Hero.propTypes = {
-  /**
-   * The header of the page
-   */
-  header: PropTypes.string,
-  /**
-   * The description of the page
-   */
-  description: PropTypes.string,
 };

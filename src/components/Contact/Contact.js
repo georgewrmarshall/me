@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 // Components
 import { Display, Headline } from '../Type';
@@ -17,15 +16,4 @@ export const Contact = ({ ...props }) => {
       </Container>
     </StyledContact>
   );
-};
-
-Contact.propTypes = {
-  /**
-   * The header of the page
-   */
-  header: PropTypes.string,
-  /**
-   * The description of the page
-   */
-  description: PropTypes.string,
 };
