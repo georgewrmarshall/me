@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import useWindowSize from 'react-use/lib/useWindowSize';
-import Confetti from 'react-confetti';
+import ConfettiGenerator from "confetti-js";
 import { Link } from 'react-scroll';
 
 // Components
@@ -13,22 +12,28 @@ import arrow from '../../images/arrow.svg';
 // Styles
 import { StyledHero } from './styles';
 
-const confettiColors = [
-  '#EE12EE',
-  '#A1E0F2',
-  '#aeb8fe',
-  '#537752',
-  '#ff8600',
-  '#F42342',
-  '#8AD7EE',
-  '#EFE037',
-  '#826C55',
-  '#496043',
-];
+// const confettiColors = [
+//   '#EE12EE',
+//   '#A1E0F2',
+//   '#aeb8fe',
+//   '#537752',
+//   '#ff8600',
+//   '#F42342',
+//   '#8AD7EE',
+//   '#EFE037',
+//   '#826C55',
+//   '#496043',
+// ];
 
 export const Hero = ({ ...props }) => {
-  const { width, height } = useWindowSize();
-  const [count, setCount] = useState(0);
+  const [party, setParty] = useState(false);
+  React.useEffect(() => {
+    const confettiSettings = { target: 'my-canvas' };
+    const confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+  
+    return () => confetti.clear();
+  }, []) // add the var dependencies or not
   return (
     <>
       <StyledHero id="homeless" {...props}>
@@ -45,7 +50,7 @@ export const Hero = ({ ...props }) => {
             <span>
               I don’t
               <br />
-              give a <button onClick={() => setCount(count + 200)}>fuck</button>
+              give a <button onClick={() => setParty(!party)}>fuck</button>
             </span>
           </Display>
           <Headline as="p">
@@ -65,12 +70,7 @@ export const Hero = ({ ...props }) => {
           </span>
           <img src={arrow} alt="scroll down" />
         </Link>
-        <Confetti
-          width={width}
-          height={height}
-          colors={confettiColors}
-          numberOfPieces={count}
-        />
+        <canvas id="my-canvas"></canvas>
       </StyledHero>
     </>
   );
