@@ -11,7 +11,6 @@ export const minWidth = {
   sm: `(min-width: ${screenSize.sm}px)`,
   md: `(min-width: ${screenSize.md}px)`,
   lg: `(min-width: ${screenSize.lg}px)`,
-  xl: `(min-width: ${screenSize.xl}px)`,
 };
 
 export const maxWidth = {
@@ -19,5 +18,4 @@ export const maxWidth = {
   sm: `(max-width: ${screenSize.sm - 1}px)`,
   md: `(max-width: ${screenSize.md - 1}px)`,
   lg: `(max-width: ${screenSize.lg - 1}px)`,
-  xl: `(max-width: ${screenSize.xl - 1}px)`,
 };

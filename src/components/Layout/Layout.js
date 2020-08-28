@@ -7,19 +7,22 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { ThemeProvider } from 'styled-components';
+import useDarkMode from 'use-dark-mode';
 
 // Themes
-import { lightTheme } from '../themes';
+import { lightTheme, darkTheme } from '../themes';
 
 // Styles
 import { GlobalStyle } from './styles';
 
 export const Layout = ({ children }) => {
+  const darkMode = useDarkMode(false);
   return (
-    <>
-      <GlobalStyle theme={lightTheme} />
+    <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}>
+      <GlobalStyle theme={darkMode.value ? darkTheme : lightTheme} />
       {children}
-    </>
+    </ThemeProvider>
   );
 };
 

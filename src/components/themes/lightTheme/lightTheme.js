@@ -7,12 +7,8 @@ import { navbar } from './navbar';
 import { navbarToggle } from './navbarToggle';
 import { navLink } from './navLink';
 import { type } from '../type';
-import { screenSize, minWidth, maxWidth } from '../mediaQueries';
+import { screenSize, minWidth, maxWidth, } from '../mediaQueries';
 import { themeToggle } from './themeToggle';
-import { hero } from './hero';
-import { contact } from './contact';
-import { shit } from './shit';
-import { bullshit } from './bullshit';
 
 export const lightTheme = {
   buttonBase,
@@ -30,8 +26,4 @@ export const lightTheme = {
   type,
   screenSize,
   themeToggle,
-  hero,
-  contact,
-  shit,
-  bullshit,
-};
+}

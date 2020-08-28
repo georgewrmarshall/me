@@ -6,7 +6,7 @@ import { StyledNavLink } from "./styles";
 
 export const NavLink = ({ children, ...props }) => {
   return (
-    <StyledNavLink {...props}>
+    <StyledNavLink activeClassName="active" {...props}>
       {children}
     </StyledNavLink>
   );

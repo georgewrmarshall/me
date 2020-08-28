@@ -2,26 +2,19 @@ import styled, { css } from 'styled-components';
 import { lightTheme } from '../themes';
 
 export const StyledNavbar = styled.nav`
-  position: fixed;
+  /* display: flex; */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1030;
   height: 64px;
-  transition: all 0.3s;
-  border: 1px solid transparent;
+  /* border-bottom: 1px solid ${(props) => props.theme.navbar.borderColor}; */
 
   ${(props) => css`
-    background-color: ${props.section !== 'homeless' ? props.theme.navbar.backgroundColor : 'transparent'};
-    /* background-color: ${props.section === 'shitIveDone' ? props.theme.colorsTheme.primary : undefined};
-    background-color: ${props.section === 'inflatedBullshit' ? props.theme.colorsTheme.offWhite : undefined};
-    background-color: ${props.section === 'dontContactMe' ? props.theme.colorsTheme.offWhite : undefined}; */
-    border-color: ${props.section !== 'homeless' ? props.theme.navbar.borderColor : 'transparent'};
-
-    @media ${props.theme.minWidth.lg} {
-      height:  ${props.section === 'homeless' ? `136px` : `80px`};
+    @media ${props.theme.minWidth.md} {
+      height: 120px;
     }
-
   `}
 
   > div {
@@ -39,34 +32,11 @@ export const StyledNavbar = styled.nav`
         transition: 0.3s;
         fill: ${(props) => props.theme.navbar.brandColor};
       }
-
-      + svg {
-        position: absolute;
-        left: -2px;
-        top: -2px;
-
-        path {
-          fill: ${(props) => props.theme.navbar.brandColorHover};
-        }
-      }
     }
     &:hover, &:focus, :active {
-      svg {
-        path {
-          transition: 0.3s;
-          fill: ${(props) => props.theme.navbar.brandColorHover};
-        }
-
-      + svg {
-        position: absolute;
-        left: -2px;
-        top: -2px;
-
-        path {
-          fill: ${(props) => props.theme.navbar.brandColor};
-        }
-      }
-    }
+      path {
+        fill: ${(props) => props.theme.navbar.brandColorHover};
+      } 
     }
   }
 
@@ -76,7 +46,7 @@ export const StyledNavbar = styled.nav`
     order: 1;
 
     ${(props) => css`
-      @media ${props.theme.maxWidth.lg} {
+      @media ${props.theme.maxWidth.md} {
         display: block;
         background: transparent;
         border: 1px solid transparent;
@@ -141,7 +111,7 @@ export const StyledNavbar = styled.nav`
 
   .menu {
     ${(props) => css`
-      @media ${props.theme.maxWidth.lg} {
+      @media ${props.theme.maxWidth.md} {
         position: fixed;
         top: ${props.show ? 0 : '1.5rem'};
         right: ${props.show ? 0 : '1.5rem'};
@@ -160,7 +130,7 @@ export const StyledNavbar = styled.nav`
     `}
 
     ${(props) => css`
-      @media ${props.theme.minWidth.lg} {
+      @media ${props.theme.minWidth.md} {
         order: 1;
       }
     `}
@@ -172,10 +142,10 @@ export const StyledNavbar = styled.nav`
       display: flex;
 
       ${(props) => css`
-        @media ${props.theme.maxWidth.lg} {
+        @media ${props.theme.maxWidth.md} {
           flex-direction: column;
         }
-        @media ${props.theme.minWidth.lg} {
+        @media ${props.theme.minWidth.md} {
           margin-right: -1rem;
         }
       `}
@@ -186,7 +156,7 @@ export const StyledNavbar = styled.nav`
       align-items: center;
 
       ${(props) => css`
-        @media ${props.theme.maxWidth.lg} {
+        @media ${props.theme.maxWidth.md} {
           justify-content: center;
           padding: 1rem;
           text-align: center;
@@ -194,7 +164,7 @@ export const StyledNavbar = styled.nav`
           transition: 0.1s;
           transition-delay: ${props.show ? '0.2s' : undefined};
         }
-        @media ${props.theme.minWidth.lg} {
+        @media ${props.theme.minWidth.md} {
           padding: 0 1rem;
         }
       `}

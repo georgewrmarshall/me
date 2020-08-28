@@ -3,7 +3,7 @@ import { lightenDarkenColor } from '../colors';
 import { type } from '../type';
 
 export const navbar = {
-  brandColor: colorsTheme.darkGreen,
+  brandColor: colorsTheme.headerFontColor,
   brandColorHover: colorsTheme.primary,
   borderColor: colorsTheme.borderColor,
   backgroundColor: colorsTheme.black,

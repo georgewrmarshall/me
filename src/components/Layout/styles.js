@@ -18,21 +18,49 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
   }
+
   body {
+    font-family:${(props) => props.theme.type.fontFamilyBody};
     margin: 0;
-    font-family:${props => props.theme.type.fontFamilyBody};
-    color: ${props => props.theme.colorsTheme.bodyFontColor};
-    background: ${props => props.theme.colorsTheme.bodyBackgroundColor};
-    font-weight: normal;
+    color: ${(props) => props.theme.colorsTheme.bodyFontColor};
+    background: ${(props) => props.theme.colorsTheme.bodyBackgroundColor};
+    transition: 0.3s;
   }
-  a {
-    color: inherit;
-    text-decoration: line-through;
-    &:visited {
-      color: inherit;
-    }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family:${(props) => props.theme.type.fontFamilyHeader};
+    font-weight: 900;
+    margin: 0;
+    color: ${(props) => props.theme.colorsTheme.headerFontColor};
   }
+
   p {
+    margin-top: 0;
     line-height: 1.7;
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      color: ${(props) => props.theme.colorsTheme.bodyFontColor};
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid ${(props) => props.theme.colorsTheme.primary};
+      }
+
+      &:hover, &:active, &:focus {
+        color: ${(props) => props.theme.colorsTheme.primary};
+      }
+    }
   }
 `;

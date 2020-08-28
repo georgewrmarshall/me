@@ -1,19 +1,17 @@
-import React from "react"
+import React from 'react';
 
-import { SEO, Layout, Navbar, Hero, Shit, Bullshit, Contact, Footer } from "../components"
+// Components
+import { SEO, Layout, Navbar, Home } from '../components';
 
 const IndexPage = () => (
-  <>
-    <SEO title="Homeless" />
-    <Layout>
-      <Navbar />
-      <Hero />
-      <Shit />
-      <Bullshit />
-      <Contact />
-      <Footer />
-    </Layout>
-  </>
-)
+    <>
+      <SEO title="Home" />
+      <Layout>
+        <Navbar />
+        <Home />
+      </Layout>
+    </>
+  );
+;
 
-export default IndexPage
+export default IndexPage;

@@ -46,8 +46,5 @@ export const colors = {
   black: '#15161d',
   white: '#fff',
   blueDark: '#414559',
-  purple: '#8932D9',
-  offWhite: '#F8FAED',
-  greenDark: '#2E4A34',
-  pink: '#FF9DCB',
+  purple: '#8932D9'
 }

@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: '/anti-portfolio',
   siteMetadata: {
-    title: `George Marshall - I don't give a fuck`,
-    description: `Sometimes you just can't be fucked.`,
+    title: `George Marshall - Front-end Developer &amp; Designer`,
+    description: `I am a front-end developer and designer. I like to approach products with a focus on business goals and user centered design. Let's talk.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -11,7 +11,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -22,10 +22,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#8932D9`,
+        theme_color: `#8932D9`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -43,6 +43,7 @@ module.exports = {
         display: 'swap',
       },
     },
+    'gatsby-plugin-use-dark-mode',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
