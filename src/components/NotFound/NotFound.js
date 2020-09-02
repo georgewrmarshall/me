@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import { Container, Hero, Main } from '..';
+import { Container, Hero } from '..';
 
 // Images
 import profileImg from '../../assets/images/profile.png';

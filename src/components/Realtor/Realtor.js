@@ -22,9 +22,10 @@ export const Realtor = () => {
               <img src={realtorImg} alt="Realtor.com" />
             </Container>
             <Container>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate est nihil iste esse exercitationem sit, aspernatur voluptatem dolore consequuntur inventore quos. Quod obcaecati, consequatur cumque expedita nesciunt assumenda non!
-              </p>
+              <h2>Description</h2>
+              <small>
+              Realtor.com is a leading home for sale website offering listings and real estate-related information to over 40 million consumers each month.
+              </small>
             </Container>
             <Container fluid>
               <img src={placeholderImg} alt="Realtor.com" />

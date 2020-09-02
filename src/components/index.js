@@ -10,8 +10,6 @@ export { Main } from './Main';
 export { Navbar } from './Navbar';
 export { NavLink } from './NavLink';
 export { ThemeToggle } from './ThemeToggle';
-export { ThemeContext } from './ThemeContext';
-export { ThemeContextProvider } from './ThemeContextProvider';
 export { lightTheme, darkTheme } from './themes';
 
 // Pages
