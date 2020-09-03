@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/anti-portfolio',
+  pathPrefix: '/me',
   siteMetadata: {
     title: `George Marshall - Front-end Developer &amp; Designer`,
     description: `I am a front-end developer and designer. I like to approach products with a focus on business goals and user centered design. Let's talk.`,
