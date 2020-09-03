@@ -1,4 +1,4 @@
-import { colors, lightenDarkenColor } from '../colors';
+import { colors, lightenDarkenColor, hexToRgb } from '../colors';
 
 export const colorsTheme = {
   black: colors.black,
@@ -10,4 +10,6 @@ export const colorsTheme = {
   headerFontColor: colors.white,
   bodyFontColor: colors.white,
   bodyBackgroundColor: colors.black,
+  // disabled function takes the primary color and makes it 50% opaque
+  disabledFn: function(color) { return `rgba(${hexToRgb(color)}, 0.5)` },
 }

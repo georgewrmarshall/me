@@ -10,4 +10,6 @@ export const buttonPrimary = {
   backgroundColor: colorsTheme.primary,
   backgroundColorHover: colorsTheme.primaryDark,
   color: colorsTheme.white,
+  colorDisabled: colorsTheme.white,
+  backgroundColorDisabled: () => colorsTheme.disabledFn(colorsTheme.primary),
 }

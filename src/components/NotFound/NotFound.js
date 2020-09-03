@@ -3,9 +3,6 @@ import React from 'react';
 // Components
 import { Container, Hero } from '..';
 
-// Images
-import profileImg from '../../assets/images/profile.png';
-
 // Styles
 import { StyledNotFound } from './styles';
 

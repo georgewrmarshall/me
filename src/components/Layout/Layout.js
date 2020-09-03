@@ -29,3 +29,7 @@ export const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
+
+Layout.defaultProps = {
+  theme: lightTheme
+}

@@ -27,13 +27,18 @@ export const StyledButton = styled(StyledButtonBase)`
     color: ${props.theme.buttonPrimary.color};
     background: ${props.theme.buttonPrimary.backgroundColor};
     padding: 0 2rem;
-  `}
 
-  &:hover, &:focus, &:active {
-    ${(props) => css`
+    &:hover, &:focus, &:active {
       background: ${props.theme.buttonPrimary.backgroundColorHover};
-    `}
-  }
+    }
+
+    &[disabled] {
+      color: ${props.theme.buttonPrimary.colorDisabled};
+      background: ${props.theme.buttonPrimary.backgroundColorDisabled};
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  `}
 `;
 
 StyledButton.defaultProps = {

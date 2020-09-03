@@ -1,18 +1,13 @@
-import styled, { css } from "styled-components";
-import { lightTheme } from "../themes";
+import styled, { css } from 'styled-components';
+import { lightTheme } from '../themes';
 
 export const StyledHero = styled.header`
-  ${(props) => css`
-    @media ${props.theme.maxWidth.md} {
-      padding-top: 8rem;
-    }
-
-    @media ${props.theme.minWidth.md} {
-      height: calc(100vh - 8rem);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+  ${props => css`
+    min-height: 420px;
+    height: calc(100vh - 8rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h1 {
       text-transform: uppercase;
@@ -43,7 +38,6 @@ export const StyledHero = styled.header`
         transition-delay: 0.1s;
       }
     }
-
   `}
 `;
 
