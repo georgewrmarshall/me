@@ -4,10 +4,11 @@ import { type } from '../type';
 export const buttonBase = {
   fontFamily: type.fontFamilyNav,
   fontSize: type.infoSize,
-}
+};
 
 export const buttonPrimary = {
   backgroundColor: colorsTheme.primary,
   backgroundColorHover: colorsTheme.primaryDark,
   color: colorsTheme.white,
-}
+  backgroundColorDisabled: () => colorsTheme.disabledFn(colorsTheme.primary),
+};

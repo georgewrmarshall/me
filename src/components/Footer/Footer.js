@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 // Components
 import { Container, NavLink, Info } from '../../components';
@@ -7,7 +6,7 @@ import { Container, NavLink, Info } from '../../components';
 // Styles
 import { StyledFooter } from './styles';
 
-export const Footer = ({ handleActivePage, activePage }) => (
+export const Footer = () => (
   <StyledFooter>
     <Container>
       <nav>
@@ -102,10 +101,3 @@ export const Footer = ({ handleActivePage, activePage }) => (
     </Container>
   </StyledFooter>
 );
-
-Footer.propTypes = {
-  /**
-   * The content of the Footer
-   */
-  children: PropTypes.node,
-};

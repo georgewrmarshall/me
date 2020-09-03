@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 
 import { NavLink } from '../NavLink';
 import { Container } from '../Container';
@@ -53,11 +52,4 @@ export const Navbar = () => {
       </Container>
     </StyledNavbar>
   );
-};
-
-Navbar.propTypes = {
-  /**
-   * The content of the Navbar
-   */
-  children: PropTypes.node,
 };

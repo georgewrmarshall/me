@@ -2,7 +2,9 @@ import styled, { css } from 'styled-components';
 import { Link } from 'gatsby';
 import { lightTheme } from '../themes';
 
-export const StyledNavLink = styled(Link)`
+export const StyledNavLink = styled(Link).attrs(props => ({
+  activeClassName: 'active',
+}))`
   color: ${props => props.theme.navLink.color};
   display: inline-block;
   text-decoration: none;

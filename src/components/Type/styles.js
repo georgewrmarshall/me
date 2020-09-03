@@ -43,6 +43,7 @@ StyledBody.defaultProps = {
 };
 
 export const StyledInfo = styled.p`
+  ${(props) => console.log(props)}
   ${(props) => css`
     font-size: ${props.theme.type.infoSize};
     font-family: ${props.theme.type.fontFamilyBody};
