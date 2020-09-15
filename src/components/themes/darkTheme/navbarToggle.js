@@ -1,6 +1,6 @@
 import { colorsTheme } from './colors';
-import { lightenDarkenColor } from '../colors';
+import { lightenDarkenColor } from '../baseColors';
 
 export const navbarToggle = {
-  color: lightenDarkenColor(colorsTheme.blueDark, -20),
+  color: colorsTheme.white,
 }

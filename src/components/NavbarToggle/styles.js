@@ -16,7 +16,7 @@ export const StyledNavbarToggle = styled.button`
 
   .icon__bar {
     background-color: ${(props) =>
-      props.open ? "transparent" : props.theme.navbar.menuIconColor};
+      props.open ? "transparent" : props.theme.navbarToggle.color};
     transition: background-color 0.1s;
     position: relative;
     height: 3px;
@@ -25,7 +25,7 @@ export const StyledNavbarToggle = styled.button`
 
     &::before,
     &::after {
-      background-color: ${(props) => props.theme.navbar.menuIconColor};
+      background-color: ${(props) => props.theme.navbarToggle.color};
       content: "";
       width: 100%;
       height: 100%;

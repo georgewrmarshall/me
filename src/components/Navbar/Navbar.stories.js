@@ -4,7 +4,6 @@ import { Navbar } from './Navbar';
 
 export default {
   title: 'Components/Navbar',
-  name: 'Default',
   component: Navbar,
 };
 

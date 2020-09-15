@@ -1,8 +1,10 @@
-import styled, { css } from "styled-components";
-import { lightTheme } from "../themes";
+import styled, { css } from 'styled-components';
+import { space } from '@styled-system/space';
+import { lightTheme } from '../themes';
 
 export const StyledDisplay = styled.h1`
-  ${(props) => css`
+  ${space};
+  ${props => css`
     text-transform: uppercase;
     line-height: 1;
     font-family: ${props.theme.type.fontFamilyHeader};
@@ -18,8 +20,9 @@ StyledDisplay.defaultProps = {
 };
 
 export const StyledHeadline = styled.h2`
-  ${(props) => css`
-    font-family: ${props.theme.type.fontFamilyBody};
+  ${space};
+  ${props => css`
+    font-family: ${props.theme.type.fontFamilyHeader};
     font-size: ${props.theme.type.headlineSizeMobile};
     @media ${props.theme.minWidth.md} {
       font-size: ${props.theme.type.headlineSizeDesktop};
@@ -31,8 +34,27 @@ StyledHeadline.defaultProps = {
   theme: lightTheme,
 };
 
+export const StyledTitle = styled.h2`
+  ${space};
+  ${props => css`
+    font-family: ${props.theme.type.fontFamilyBody};
+    font-size: ${props.theme.type.titleSizeMobile};
+    font-weight: normal;
+    letter-spacing: 0.05rem;
+    @media ${props.theme.minWidth.md} {
+      font-size: ${props.theme.type.titleSizeDesktop};
+    }
+  `}
+`;
+
+StyledTitle.defaultProps = {
+  theme: lightTheme,
+};
+
 export const StyledBody = styled.p`
-  ${(props) => css`
+  ${space};
+  ${props => css`
+    line-height: 1.7;
     font-size: ${props.theme.type.bodySize};
     font-family: ${props.theme.type.fontFamilyBody};
   `}
@@ -43,8 +65,10 @@ StyledBody.defaultProps = {
 };
 
 export const StyledInfo = styled.p`
-  ${(props) => console.log(props)}
-  ${(props) => css`
+  ${space};
+  ${props => console.log(props)}
+  ${props => css`
+    line-height: 1.7;
     font-size: ${props.theme.type.infoSize};
     font-family: ${props.theme.type.fontFamilyBody};
   `}

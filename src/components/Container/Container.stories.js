@@ -4,7 +4,6 @@ import { Container } from './Container';
 
 export default {
   title: 'Components/Container',
-  name: 'Default',
   component: Container,
 };
 

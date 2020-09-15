@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 
 // Components
-import { Button, Display, Headline } from '../../components';
+import { Button, Display, Title } from '../../components';
 
 // Styles
 import { StyledHome, StyledGraphic } from './styles';
@@ -48,7 +48,7 @@ export const Home = () => {
         <path className="graphic-31" d="M104.586 52.3329L134.225 40.9468L157 78.5L104.586 52.3329Z" />
       </StyledGraphic>
       <Display as="h1"><div><span>George</span></div><div><span>Marshall</span></div></Display>
-      <Headline as="h2"><div>Front-end Developer / Designer</div></Headline>
+      <Title as="h2"><div>Front-end Developer / Designer</div></Title>
       <div className="btn-container"><Button as={Link} to="/work" data-link-name="work">See Work</Button></div>
     </StyledHome>
   );

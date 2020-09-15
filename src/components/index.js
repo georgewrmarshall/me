@@ -2,7 +2,7 @@ export { SEO } from './SEO';
 export { Layout } from './Layout';
 export { Button } from './Button';
 export { Container } from './Container';
-export { Display, Headline, Body, Info } from './Type';
+export { Display, Headline, Title, Body, Info } from './Type';
 export { Footer } from './Footer';
 export { Hero } from './Hero';
 export { Link } from './Link';

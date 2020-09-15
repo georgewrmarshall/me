@@ -42,7 +42,7 @@ export const lightenDarkenColor = (col, amt) => {
 
 }
 
-export const colors = {
+export const baseColors = {
   black: '#15161d',
   white: '#fff',
   blueDark: '#414559',

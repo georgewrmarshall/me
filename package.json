@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "George Marshall <georgewrmarshall@gmail.com>",
   "dependencies": {
+    "@styled-system/space": "^5.1.2",
     "babel-plugin-styled-components": "^1.10.7",
     "babel-preset-react-app": "^9.1.2",
     "confetti-js": "^0.0.18",
@@ -49,7 +50,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve --prefix-paths -o",
+    "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "storybook": "start-storybook -p 6006",

@@ -13,9 +13,13 @@ export default {
 
 const Template = args => <NavLink className={args.active && 'active'} {...args}>{args.children}</NavLink>;
 
-export const Primary = Template.bind({});
+export const DefaultStory = Template.bind({});
 
-Primary.args = {
+DefaultStory.args = {
   children: 'NavLink',
   active: false
+};
+
+DefaultStory.story = {
+  name: 'Default',
 };

@@ -42,10 +42,6 @@ export const StyledHome = styled.div`
     ${(props) => css`
       margin-bottom: 2rem;
       color: ${props.theme.colorsTheme.bodyFontColor};
-      font-family: ${props.theme.type.fontFamilyBody};
-      font-weight: normal;
-      font-size: 1.5rem;
-      letter-spacing: .05rem;
       overflow: hidden;
       text-align: center;
     `}

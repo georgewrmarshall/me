@@ -1,0 +1,206 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+import { baseColors, lightenDarkenColor, hexToRgb } from './baseColors';
+import { colorsTheme as colorsThemeLight } from './lightTheme/colors.js';
+import { colorsTheme as colorsThemeDark } from './darkTheme/colors.js';
+
+<Meta title="Design System/Colors" />
+
+# Base Colors
+
+<ColorPalette>
+  <ColorItem
+    title="theme.baseColors.purple"
+    subtitle="Purple"
+    colors={[baseColors.purple]}
+  />
+  <ColorItem
+    title="theme.baseColors.blueDark"
+    subtitle="Blue Dark"
+    colors={[baseColors.blueDark]}
+  />
+  <ColorItem
+    title="theme.baseColors.black"
+    subtitle="Black"
+    colors={[baseColors.black]}
+  />
+  <ColorItem
+    title="theme.baseColors.white"
+    subtitle="White"
+    colors={[baseColors.white]}
+  />
+</ColorPalette>
+
+# Tones
+
+<ColorPalette>
+  <ColorItem
+    title="theme.baseColors.purple"
+    subtitle="Purple: -16, 0"
+    colors={[lightenDarkenColor(baseColors.purple, -16), baseColors.purple]}
+  />
+  <ColorItem
+    title="theme.baseColors.blueDark"
+    subtitle="Blue Dark: -32, -24, -16, 0, 144, 160"
+    colors={[
+      lightenDarkenColor(colorsThemeLight.blueDark, -32),
+      lightenDarkenColor(colorsThemeLight.blueDark, -24),
+      lightenDarkenColor(colorsThemeLight.blueDark, -16),
+      baseColors.blueDark,
+      lightenDarkenColor(colorsThemeLight.blueDark, 144),
+      lightenDarkenColor(colorsThemeLight.blueDark, 160),
+    ]}
+  />
+  <ColorItem
+    title="theme.baseColors.black"
+    subtitle="Black: 0, 16, 40, 200, 224"
+    colors={[
+      baseColors.black,
+      lightenDarkenColor(baseColors.black, 16),
+      lightenDarkenColor(baseColors.black, 40),
+      lightenDarkenColor(baseColors.black, 200),
+      lightenDarkenColor(baseColors.black, 224),
+    ]}
+  />
+</ColorPalette>
+
+# Light Theme Colors
+
+<ColorPalette>
+  <ColorItem
+    title="theme.colorsTheme.primary"
+    subtitle="Primary"
+    colors={[colorsThemeLight.primary]}
+  />
+  <ColorItem
+    title="theme.colorsTheme.primaryDark"
+    subtitle="Primary Dark (primary -16)"
+    colors={[colorsThemeLight.primaryDark]}
+  />
+  <ColorItem
+    title="theme.colorsTheme.borderColor"
+    subtitle="Border Color (black 200)"
+    colors={[colorsThemeLight.borderColor]}
+  />
+  <ColorItem
+    title="theme.colorsTheme.headerFontColor"
+    subtitle="Header Font Color"
+    colors={[colorsThemeLight.headerFontColor]}
+  />
+  <ColorItem
+    title="theme.colorsTheme.bodyFontColor"
+    subtitle="Body Font Color"
+    colors={[colorsThemeLight.bodyFontColor]}
+  />
+  <ColorItem
+    title="theme.colorsTheme.bodyBackgroundColor"
+    subtitle="Body Background Color"
+    colors={[colorsThemeLight.bodyBackgroundColor]}
+  />
+</ColorPalette>
+
+# Dark Theme Colors
+
+<ColorPalette>
+  <ColorItem
+    title="theme.colorsTheme.primary"
+    subtitle="Primary"
+    colors={[colorsThemeDark.primary]}
+  />
+  <ColorItem
+    title="theme.colorsTheme.primaryDark"
+    subtitle="Primary Dark (primary -16)"
+    colors={[colorsThemeDark.primaryDark]}
+  />
+  <ColorItem
+    title="theme.colorsTheme.borderColor"
+    subtitle="Border Color (black 40)"
+    colors={[colorsThemeDark.borderColor]}
+  />
+  <ColorItem
+    title="theme.colorsTheme.headerFontColor"
+    subtitle="Header Font Color"
+    colors={[colorsThemeDark.headerFontColor]}
+  />
+  <ColorItem
+    title="theme.colorsTheme.bodyFontColor"
+    subtitle="Body Font Color"
+    colors={[colorsThemeDark.bodyFontColor]}
+  />
+  <ColorItem
+    title="theme.colorsTheme.bodyBackgroundColor"
+    subtitle="Body Background Color"
+    colors={[colorsThemeDark.bodyBackgroundColor]}
+  />
+</ColorPalette>
+
+# Logo Graphic Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Logo Colors"
+    subtitle="blueDark: -32, -24, -16,"
+    colors={[
+      lightenDarkenColor(colorsThemeLight.blueDark, -32),
+      lightenDarkenColor(colorsThemeLight.blueDark, -24),
+      lightenDarkenColor(colorsThemeLight.blueDark, -16),
+    ]}
+  />
+</ColorPalette>
+
+# Theme Toggle Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Theme Toggle Light"
+    subtitle="blueDark: 144, 160"
+    colors={[
+      lightenDarkenColor(colorsThemeLight.blueDark, 144),
+      lightenDarkenColor(colorsThemeLight.blueDark, 160),
+    ]}
+  />
+  <ColorItem
+    title="Theme Toggle Dark"
+    subtitle="blueDark: -16, 0"
+    colors={[
+      lightenDarkenColor(colorsThemeLight.blueDark, -16),
+      colorsThemeLight.blueDark,
+    ]}
+  />
+  <ColorItem
+    title="Theme Toggle Dropshadow"
+    subtitle="blueDark: 0.5 opacity"
+    colors={[`rgba(${hexToRgb(baseColors.blueDark)}, 0.5)`]}
+  />
+</ColorPalette>
+
+# Black Tones
+
+<ColorPalette>
+  <ColorItem
+    title="Dark Navbar Menu & Footer Background"
+    subtitle="black: 16"
+    colors={[lightenDarkenColor(baseColors.black, 16)]}
+  />
+  <ColorItem
+    title="Dark Border Color"
+    subtitle="black: 40"
+    colors={[lightenDarkenColor(baseColors.black, 40)]}
+  />
+  <ColorItem
+    title="Light Border Color"
+    subtitle="black: 200"
+    colors={[lightenDarkenColor(baseColors.black, 200)]}
+  />
+  <ColorItem
+    title="Light Navbar Menu & Footer Background"
+    subtitle="black: 224"
+    colors={[lightenDarkenColor(baseColors.black, 224)]}
+  />
+</ColorPalette>
+
+# Disabled
+The disabled function takes an argument of color and returns it 50% opaque.
+```
+theme.colorsTheme.disabledFn(color);
+```

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import { SEO, Layout, Navbar, Work, Footer } from '../components';
+import { SEO, Layout, Navbar, Work, Footer } from '../../components';
 
 const WorkPage = () => (
     <>

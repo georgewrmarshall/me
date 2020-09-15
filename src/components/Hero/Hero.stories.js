@@ -4,7 +4,6 @@ import { Hero } from './Hero';
 
 export default {
   title: 'Components/Hero',
-  name: 'Default',
   component: Hero,
     argTypes: {
     header: { control: 'text' },

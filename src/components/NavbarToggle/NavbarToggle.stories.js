@@ -4,7 +4,6 @@ import { NavbarToggle } from './NavbarToggle';
 
 export default {
   title: 'Components/NavbarToggle',
-  name: 'Default',
   component: NavbarToggle,
 };
 

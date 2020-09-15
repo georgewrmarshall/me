@@ -1,17 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import useDarkMode from 'use-dark-mode';
 
 // Styles
 import { StyledThemeToggle } from './styles';
 
-export const ThemeToggle = ({ ...props }) => {
-  const darkMode = useDarkMode(false);
+export const ThemeToggle = ({ checked, onChange, ...props }) => {
   return (
-    <StyledThemeToggle darkMode={darkMode.value} {...props}>
+    <StyledThemeToggle darkMode={checked} {...props}>
       <input
-        checked={darkMode.value}
-        onChange={darkMode.toggle}
+        checked={checked}
+        onChange={onChange}
         name="darkMode"
         id="darkMode"
         type="checkbox"
@@ -23,11 +21,12 @@ export const ThemeToggle = ({ ...props }) => {
 
 ThemeToggle.propTypes = {
   /**
-   * The content of the ThemeToggle
+   * Whether the input is checked or darkmode is on
    */
-  children: PropTypes.node,
+  checked: PropTypes.bool,
   /**
-   * The onClick of the button
+   * The onChange function of the input
    */
-  onClick: PropTypes.func,
+  onChange: PropTypes.func,
 };
+

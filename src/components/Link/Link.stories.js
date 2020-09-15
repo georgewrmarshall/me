@@ -4,7 +4,6 @@ import { Link } from './Link';
 
 export default {
   title: 'Components/Link',
-  name: 'Default',
   component: Link,
   argTypes: {
     children: { control: 'text' },

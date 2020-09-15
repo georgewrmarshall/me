@@ -40,71 +40,11 @@ export const StyledNavbar = styled.nav`
     }
   }
 
-  .btn-menu-toggle {
-    display: none;
-    cursor: pointer;
-    order: 1;
-
+  .toggle {
     ${(props) => css`
-      @media ${props.theme.maxWidth.md} {
-        display: block;
-        background: transparent;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        padding: 0;
-
-        .icon {
-          display: flex;
-          align-items: center;
-          height: 24px;
-          width: 24px;
-        }
-
-        .icon__bar {
-          background-color: ${(props) =>
-            props.show ? 'transparent' : props.theme.navbar.menuIconColor};
-          transition: background-color 0.1s;
-          position: relative;
-          height: 3px;
-          border-radius: 3px;
-          width: 100%;
-
-          &::before,
-          &::after {
-            background-color: ${(props) => props.theme.navbar.menuIconColor};
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            right: 0;
-            border-radius: 3px;
-            transition: transform 0.3s, top 0.3s, background-color 0s;
-          }
-
-          &::before {
-            ${(props) =>
-              props.show
-                ? `
-                  top: 0;
-                  transform: rotate(135deg);
-                `
-                : `
-                  top: -10px;
-                `};
-          }
-
-          &::after {
-            ${(props) =>
-              props.show
-                ? `
-                  top: 0;
-                  transform: rotate(225deg);
-                `
-                : `
-                  top: 10px;
-                `};
-          }
-        }
+      display: block;
+      @media ${props.theme.minWidth.md} {
+        display: none;
       }
     `}
   }

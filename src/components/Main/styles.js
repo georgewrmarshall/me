@@ -6,22 +6,13 @@ export const StyledMain = styled.main`
     opacity: ${props.loaded ? '1' : '0'};
     transition: opacity 0.5s;
     transition-delay: 0.5s;
+    margin-bottom: 10rem;
 
     section {
-      margin-bottom: 10rem;
-
+      
       img {
         width: 100%;
         margin-bottom: 2rem;
-      }
-
-      h2 {
-        margin-bottom: 1rem;
-      }
-
-      p {
-        font-size: ${props.theme.type.bodySize};
-        line-height: 1.7;
       }
     }
   `}

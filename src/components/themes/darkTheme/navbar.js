@@ -1,5 +1,5 @@
 import { colorsTheme } from './colors';
-import { lightenDarkenColor } from '../colors';
+import { lightenDarkenColor } from '../baseColors';
 import { type } from '../type';
 
 export const navbar = {
@@ -7,7 +7,6 @@ export const navbar = {
   brandColorHover: colorsTheme.primary,
   borderColor: colorsTheme.borderColor,
   backgroundColor: colorsTheme.black,
-  menuIconColor: colorsTheme.white,
-  menuBackgroundColor: lightenDarkenColor(colorsTheme.black, 20),
+  menuBackgroundColor: lightenDarkenColor(colorsTheme.black, 16),
   fontFamily: type.fontFamilyNav,
 }

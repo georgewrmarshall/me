@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { Link } from 'gatsby';
+import useDarkMode from 'use-dark-mode';
 
 import { NavLink } from '../NavLink';
+import { NavbarToggle } from '../NavbarToggle';
 import { Container } from '../Container';
 import { ThemeToggle } from '../ThemeToggle';
 
 // Styles
-import { StyledNavbar } from "./styles";
+import { StyledNavbar } from './styles';
 
 export const Navbar = () => {
   const [show, setShow] = useState(false);
+  const darkMode = useDarkMode(false);
   const handleClickToggle = () => {
     setShow(!show);
   };
@@ -30,11 +34,14 @@ export const Navbar = () => {
               <NavLink to="/contact">Contact</NavLink>
             </li>
             <li>
-              <ThemeToggle />
+              <ThemeToggle
+                checked={darkMode.value}
+                onChange={darkMode.toggle}
+              />
             </li>
           </ul>
         </div>
-        <a className="brand" href="/">
+        <Link className="brand" to="/">
           <svg
             width="32"
             height="32"
@@ -43,12 +50,12 @@ export const Navbar = () => {
           >
             <path d="m171 0l-171 85 0 278 85 42 86-42 0 149 85-43 0-240 43-25 0 308 85-43 0-240 43-25 0 308 85-43 0-256-64-42-69 39-59-39-69 39-59-39-64 21 43 21 0 128-19 9-67-30 0-256 86-43 0 64 85 43 0-85z" />
           </svg>
-        </a>
-        <button className="btn-menu-toggle" onClick={handleClickToggle} type="button" aria-label="Toggle Menu">
-          <div className="icon">
-            <div className="icon__bar" />
-          </div>
-        </button>
+        </Link>
+        <NavbarToggle
+          className="toggle"
+          onClick={handleClickToggle}
+          open={show}
+        />
       </Container>
     </StyledNavbar>
   );

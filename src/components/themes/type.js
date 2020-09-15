@@ -4,8 +4,10 @@ export const type = {
   fontFamilyHeader: `'Playfair Display', serif`,
   displaySizeMobile: '3rem',
   displaySizeDesktop: '4rem',
-  headlineSizeDesktop: '1.5rem',
-  headlineSizeMobile: '1.25rem',
+  headlineSizeDesktop: '2rem',
+  headlineSizeMobile: '1.5rem',
+  titleSizeDesktop: '1.5rem',
+  titleSizeMobile: '1.25rem',
   bodySize: '1.25rem',
   infoSize: '0.875rem',
 }

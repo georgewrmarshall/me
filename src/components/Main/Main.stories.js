@@ -4,7 +4,6 @@ import { Main } from './Main';
 
 export default {
   title: 'Components/Main',
-  name: 'Default',
   component: Main,
   argTypes: {
     children: { control: 'text' },
