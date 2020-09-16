@@ -8,7 +8,7 @@ import { navbarToggle } from './navbarToggle';
 import { navLink } from './navLink';
 import { type } from '../type';
 import { themeToggle } from './themeToggle';
-import { screenSize, minWidth, maxWidth, } from '../mediaQueries';
+import { screenSize, minWidth, maxWidth, breakpoints } from '../mediaQueries';
 
 export const darkTheme = {
   buttonBase,
@@ -20,6 +20,7 @@ export const darkTheme = {
   logo,
   minWidth,
   maxWidth,
+  breakpoints,
   navbar,
   navbarToggle,
   navLink,

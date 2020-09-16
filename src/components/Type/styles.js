@@ -38,12 +38,9 @@ export const StyledTitle = styled.h2`
   ${space};
   ${props => css`
     font-family: ${props.theme.type.fontFamilyBody};
-    font-size: ${props.theme.type.titleSizeMobile};
+    font-size: ${props.theme.type.titleSize};
     font-weight: normal;
     letter-spacing: 0.05rem;
-    @media ${props.theme.minWidth.md} {
-      font-size: ${props.theme.type.titleSizeDesktop};
-    }
   `}
 `;
 
@@ -66,7 +63,6 @@ StyledBody.defaultProps = {
 
 export const StyledInfo = styled.p`
   ${space};
-  ${props => console.log(props)}
   ${props => css`
     line-height: 1.7;
     font-size: ${props.theme.type.infoSize};

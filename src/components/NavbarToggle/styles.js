@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { lightTheme } from "../themes";
+import styled from 'styled-components';
+import { lightTheme } from '../themes';
 
 export const StyledNavbarToggle = styled.button`
   background: transparent;
@@ -15,8 +15,8 @@ export const StyledNavbarToggle = styled.button`
   }
 
   .icon__bar {
-    background-color: ${(props) =>
-      props.open ? "transparent" : props.theme.navbarToggle.color};
+    background-color: ${props =>
+      props.open ? 'transparent' : props.theme.navbarToggle.color};
     transition: background-color 0.1s;
     position: relative;
     height: 3px;
@@ -25,8 +25,8 @@ export const StyledNavbarToggle = styled.button`
 
     &::before,
     &::after {
-      background-color: ${(props) => props.theme.navbarToggle.color};
-      content: "";
+      background-color: ${props => props.theme.navbarToggle.color};
+      content: '';
       width: 100%;
       height: 100%;
       position: absolute;
@@ -36,7 +36,7 @@ export const StyledNavbarToggle = styled.button`
     }
 
     &::before {
-      ${(props) =>
+      ${props =>
         props.open
           ? `
               top: 0;
@@ -48,7 +48,7 @@ export const StyledNavbarToggle = styled.button`
     }
 
     &::after {
-      ${(props) =>
+      ${props =>
         props.open
           ? `
               top: 0;

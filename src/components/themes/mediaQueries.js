@@ -19,3 +19,20 @@ export const maxWidth = {
   md: `(max-width: ${screenSize.md - 1}px)`,
   lg: `(max-width: ${screenSize.lg - 1}px)`,
 };
+
+// styled-system breakpoint mapping
+// theme.js
+export const breakpoints = [
+  `${screenSize.xs}px`,
+  `${screenSize.sm}px`,
+  `${screenSize.md}px`,
+  `${screenSize.lg}px`,
+  `${screenSize.xl}px`,
+];
+
+// aliases
+breakpoints.xs = breakpoints[0];
+breakpoints.sm = breakpoints[1];
+breakpoints.md = breakpoints[2];
+breakpoints.lg = breakpoints[3];
+breakpoints.xl = breakpoints[4];

@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "George Marshall <georgewrmarshall@gmail.com>",
   "dependencies": {
+    "@styled-system/flexbox": "^5.1.2",
+    "@styled-system/grid": "^5.1.2",
     "@styled-system/space": "^5.1.2",
     "babel-plugin-styled-components": "^1.10.7",
     "babel-preset-react-app": "^9.1.2",

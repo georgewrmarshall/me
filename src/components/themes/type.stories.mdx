@@ -1,0 +1,42 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+
+import { type } from './type';
+
+<Meta title="Design System/Typography" />
+
+# Typography
+The Typography for ME is made up of 3 font variations; Headers, Body and Navigation. All typography on the site should be made up with a combination of the font sizes and font families below.
+
+## Headers
+There are 2 sizes of headers Display and Headline. These components should used anywhere `<h>` tags would be appropriate.
+
+<Typeset fontFamily={type.fontFamilyHeader} fontSizes={[type.displaySizeDesktop, type.headlineSizeDesktop]} />
+
+**Font Family:** Playfair Display <br /> 
+**Components:**
+- `<Display />` Desktop: 4rem(64px) Mobile: 3rem(48px)
+- `<Headline />` Desktop: 2rem(32px) Mobile: 1.5rem(24px)
+
+## Body
+There are 3 sizes of body text components Title, Body and Info. These components should be used predominantly for body text or subheadings. Georgia was used as it's an elegant serif font that is one of the OG web safe fonts.
+
+<Typeset fontFamily={type.fontFamilyBody} fontSizes={[type.titleSize, type.bodySize, type.infoSize]} />
+
+**Font Family:** Georgia <br /> 
+**Components:**
+- `<Title />` Desktop: 1.5rem(24px) Mobile:1.5rem(24px)
+- `<Body />` Desktop: 1.25rem(20px) Mobile: 1.25rem(20px)
+- `<Info />` Desktop: 0.875rem(14px) Mobile: 0.875rem(14px)
+
+## Navigation
+The navigation font family should be used anywhere an action or navigation component is required with the exception being inline links in a body of text. The size used is the same as the `Info` component. All navigational components should be in uppercase.
+
+**Font Family:** Avenir 85 <br />
+**Components:**
+- `<Button />` Desktop: 0.875rem(14px) Mobile: 0.875rem(14px)
+- `<NavLink />` Desktop: 0.875rem(14px) Mobile: 0.875rem(14px)
+- `<Link />` Desktop: 0.875rem(14px) Mobile: 0.875rem(14px)
+
+**Text Transform:** uppercase
+
+<Typeset fontFamily={type.fontFamilyNav} fontSizes={[type.infoSize]} />

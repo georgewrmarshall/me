@@ -7,14 +7,15 @@ import { StyledThemeToggle } from './styles';
 export const ThemeToggle = ({ checked, onChange, ...props }) => {
   return (
     <StyledThemeToggle darkMode={checked} {...props}>
-      <input
-        checked={checked}
-        onChange={onChange}
-        name="darkMode"
-        id="darkMode"
-        type="checkbox"
-      />
-      <label htmlFor="darkMode" />
+      <label htmlFor="darkMode">
+        <input
+          checked={checked}
+          onChange={onChange}
+          name="darkMode"
+          id="darkMode"
+          type="checkbox"
+        />
+      </label>
     </StyledThemeToggle>
   );
 };
@@ -29,4 +30,3 @@ ThemeToggle.propTypes = {
    */
   onChange: PropTypes.func,
 };
-

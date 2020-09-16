@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import { lightTheme } from "../themes";
+import styled, { css } from 'styled-components';
+import { lightTheme } from '../themes';
 
 export const StyledThemeToggle = styled.div`
-position: relative;
-display: inline-block;
+  position: relative;
+  display: inline-block;
 
   input {
     display: none;
@@ -15,34 +15,35 @@ display: inline-block;
     width: 40px;
     height: 20px;
     position: relative;
-    
+
     /* Switch Rail & Knob */
     &:before,
     &:after {
-      content: "";
+      content: '';
       display: flex;
       position: absolute;
       cursor: pointer;
       top: 0;
       left: 0;
     }
-    
+
     /* Switch Rail */
     &:before {
-      ${(props) => props.darkMode ? `content: "🌙"` : `content: "☀️"`};
+      ${props => (props.darkMode ? `content: "🌙"` : `content: "☀️"`)};
       width: 100%;
       height: 20px;
-      background-color: ${(props) => props.theme.themeToggle.railOffBackgroundColor};
+      background-color: ${props =>
+        props.theme.themeToggle.railOffBackgroundColor};
       border-radius: 9999em;
       transition: 0.25s;
       align-items: center;
-      justify-content: ${(props) => props.darkMode ? "flex-start" : "flex-end"};
+      justify-content: ${props => (props.darkMode ? 'flex-start' : 'flex-end')};
       font-size: 14px;
       line-height: 1;
-      padding-left: ${(props) => props.darkMode ? ".25rem" : "0"};
-      padding-right: ${(props) => props.darkMode ? "0" : ".25rem"};
+      padding-left: ${props => (props.darkMode ? '.25rem' : '0')};
+      padding-right: ${props => (props.darkMode ? '0' : '.25rem')};
     }
-    
+
     /* Switch Knob */
     &:after {
       top: 0;
@@ -50,26 +51,30 @@ display: inline-block;
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: ${(props) => props.theme.themeToggle.knobOffBackgroundColor};
-      box-shadow: 0 0 2px ${(props) => props.theme.themeToggle.knobDropshadowColor};;
+      background-color: ${props =>
+        props.theme.themeToggle.knobOffBackgroundColor};
+      box-shadow: 0 0 2px
+        ${props => props.theme.themeToggle.knobDropshadowColor};
       transition: 0.25s;
     }
-  }
 
-  /* When input is checked */
-  input:checked + label {
-    /* Switch Rail */
-    &:before {
-      background-color: ${(props) => props.theme.themeToggle.railOnBackgroundColor};
-    }
-    
-    /* Switch Knob */
-    &:after {
-      left: 24px;
-      background-color: ${(props) => props.theme.themeToggle.knobOnBackgroundColor};
-    }
+    ${props =>
+      props.darkMode
+        ? css`
+          /* Switch Rail */
+          &:before {
+            background-color: ${props.theme.themeToggle.railOnBackgroundColor};
+          }
+
+          /* Switch Knob */
+          &:after {
+            left: 24px;
+            background-color: ${props.theme.themeToggle.knobOnBackgroundColor};
+          }
+        `
+        : undefined}
   }
-`
+`;
 
 StyledThemeToggle.defaultProps = {
   theme: lightTheme,

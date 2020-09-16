@@ -8,12 +8,11 @@ import {
   Headline,
   Title,
   Body,
-  Info,
+  Box,
 } from '../../components';
 
 // Images
 import realtorImg from '../../assets/images/realtor.png';
-import placeholderImg from '../../assets/images/placholder.jpg';
 
 // Styles
 import { StyledRealtor } from './styles';
@@ -28,12 +27,12 @@ export const Realtor = () => {
         />
       </Container>
       <Main>
-        <section>
+        <Box as="section" mb={{_: 4, md: 6}}>
           <Container fluid>
             <img src={realtorImg} alt="Realtor.com" />
           </Container>
           <Container>
-            <Body mb={6}>
+            <Body>
               <em>
                 Realtor.com is a leading home for sale website offering listings
                 and real estate-related information to over 40 million consumers
@@ -41,56 +40,55 @@ export const Realtor = () => {
               </em>
             </Body>
           </Container>
-        </section>
-        <section>
+        </Box>
+        <Box as="section" mb={{_: 4, md: 6}}>
           <Container>
             <Headline mb={3}>The Problem</Headline>
-            <Body mb={6}>
+            <Body mb={4}>
               The current consumer-facing product was in the early-mid stages of
               moving from a Ruby application to a Next.js/React application.
               With over 100 developers working in different teams and time zones
               on different features of the application, there were many
               inconsistencies and inefficiencies being created:
-              <ul>
-                <li>Duplication of components.</li>
-                <li>Inconsistencies in the design of the component.</li>
-                <li>
-                  Quality of components was compromised because of time
-                  constraints in a sprint.
-                </li>
-                <li>
-                  Accessibility and performance weren’t being taken into
-                  account.
-                </li>
-                <li>
-                  No accountability for components or developers didn’t want to
-                  take responsibility for them.
-                </li>
-              </ul>
             </Body>
+            <ul>
+              <Body as="li">Duplication of components.</Body>
+              <Body as="li">Inconsistencies in the design of the component.</Body>
+              <Body as="li">
+                Quality of components was compromised because of time
+                constraints in a sprint.
+              </Body>
+              <Body as="li">
+                Accessibility and performance weren’t being taken into account.
+              </Body>
+              <Body as="li">
+                No accountability for components or developers didn’t want to
+                take responsibility for them.
+              </Body>
+            </ul>
           </Container>
-        </section>
-        <section>
+        </Box>
+        <Box as="section" mb={{_: 4, md: 6}}>
           <Container>
             <Headline mb={3}>The Solution</Headline>
-            <Body mb={6}>
+            <Body mb={4}>
               A design system and accompanying UI component library were
               proposed. <br /> This would:
-              <ul>
-                <li>Eliminate duplication of components.</li>
-                <li>Ensure consistency in design, look and feel.</li>
-                <li>Ensure the quality of the component.</li>
-                <li>Ensure all components are accessible and performant.</li>
-                <li>
-                  Allow a team to be responsible and held accountable for the
-                  quality, maintenance and additions of new components to the
-                  library.
-                </li>
-              </ul>
             </Body>
+            <ul>
+              <Body as="li">Eliminate duplication of components.</Body>
+              <Body as="li">Ensure consistency in design, look and feel.</Body>
+              <Body as="li">Ensure the quality of the component.</Body>
+              <Body as="li">Ensure all components are accessible and performant.</Body>
+              <Body as="li">
+                Allow a team to be responsible and held accountable for the
+                quality, maintenance and additions of new components to the
+                library.
+              </Body>
+            </ul>
           </Container>
-        </section>
-        <section>
+        </Box>
+        <Box as="section" mb={{_: 4, md: 6}}>
           <Container>
             <Headline mb={3}>Methodology and Process</Headline>
             <Body>
@@ -98,28 +96,29 @@ export const Realtor = () => {
               <a
                 href="https://bradfrost.com/blog/post/atomic-web-design/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Atomic Design
               </a>{' '}
               methodologies. Starting with the smallest possible component(or
               atoms) and building more complex components(or organisms) from
               there. We had 3 Design System Meetings(DSM) a week to discuss
-              component and system requirements. We would ask questions like:
-              <ul>
-                <li>
-                  Is this component necessary? Does one already exist in another
-                  form? If so can we push back and the designer can use the
-                  component that already exists to solve the problem. Sometimes
-                  less is more!
-                </li>
-                <li>
-                  What are the requirements of this component and how could it
-                  be customized? Are we building something that is scalable or
-                  trapping ourselves with a component that is too specific?
-                </li>
-                <li>Does this component fit into the system?</li>
-              </ul>
+              component and system requirements. We would ask questions like: ‰
             </Body>
+            <ul>
+              <Body as="li">
+                Is this component necessary? Does one already exist in another
+                form? If so can we push back and the designer can use the
+                component that already exists to solve the problem. Sometimes
+                less is more!
+              </Body>
+              <Body as="li">
+                What are the requirements of this component and how could it be
+                customized? Are we building something that is scalable or
+                trapping ourselves with a component that is too specific?
+              </Body>
+              <Body as="li">Does this component fit into the system?</Body>
+            </ul>
             <Body mb={6}>
               Once the component was approved and added to the Design System we
               would build it using React, document it’s used and application
@@ -131,33 +130,31 @@ export const Realtor = () => {
               just building their own component.
             </Body>
           </Container>
-        </section>
-        <section>
+        </Box>
+        <Box as="section" mb={{_: 4, md: 6}}>
           <Container>
             <Headline mb={3}>Tools used</Headline>
             <Body>
               There were a number of helpful tools that we used to achieve our
               Design System and UI Component Library.
             </Body>
-            <Title>Design:</Title>
-            <Body>
+            <Box>
+              <Title>Design:</Title>
               <ul>
-                <li>Invision DSM</li>
-                <li>Sketch</li>
+                <Body as="li">Invision DSM</Body>
+                <Body as="li">Sketch</Body>
               </ul>
-            </Body>
-            <Title>Development:</Title>
-            <Body mb={6}>
+              <Title>Development:</Title>
               <ul>
-                <li>React</li>
-                <li>Storybook</li>
-                <li>React Testing Library</li>
-                <li>Travis CI</li>
+                <Body as="li">React</Body>
+                <Body as="li">Storybook</Body>
+                <Body as="li">React Testing Library</Body>
+                <Body as="li">Travis CI</Body>
               </ul>
-            </Body>
+            </Box>
           </Container>
-        </section>
-        <section>
+        </Box>
+        <Box as="section" mb={{_: 4, md: 6}}>
           <Container>
             <Headline mb={3}>Conclusion</Headline>
             <Body>
@@ -169,7 +166,7 @@ export const Realtor = () => {
               team of developers.
             </Body>
           </Container>
-        </section>
+        </Box>
       </Main>
     </StyledRealtor>
   );

@@ -1,5 +1,6 @@
 export { SEO } from './SEO';
 export { Layout } from './Layout';
+export { Box } from './Box';
 export { Button } from './Button';
 export { Container } from './Container';
 export { Display, Headline, Title, Body, Info } from './Type';
