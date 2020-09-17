@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import useDarkMode from 'use-dark-mode';
 
-import { NavLink } from '../NavLink';
-import { NavbarToggle } from '../NavbarToggle';
-import { Container } from '../Container';
-import { ThemeToggle } from '../ThemeToggle';
+import { NavLink, Container, ThemeToggle, NavbarToggle } from '..';
 
 // Styles
 import { StyledNavbar } from './styles';

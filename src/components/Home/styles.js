@@ -21,11 +21,9 @@ StyledHome.defaultProps = {
 
 export const StyledHomeHero = styled.div`
   display: flex;
+  align-items: center;
   min-height: 420px;
   height: calc(100vh - 5rem);
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   position: relative;
 
   ${(props) => css`

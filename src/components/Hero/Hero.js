@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 // Components
-import { Display, Title } from '../Type';
+import { Display, Title, Container } from '..';
 
 // Styles
 import { StyledHero } from "./styles";
@@ -14,8 +14,10 @@ export const Hero = ({ header, description, ...props }) => {
   }, [loaded]);
   return (
     <StyledHero loaded={loaded} {...props}>
-      <Display as="h1"><span>{header}</span></Display>
-      <Title as="p"><span>{description}</span></Title>
+      <Container>
+        <Display as="h1"><span>{header}</span></Display>
+        <Title as="p"><span>{description}</span></Title>
+      </Container>
     </StyledHero>
   );
 };

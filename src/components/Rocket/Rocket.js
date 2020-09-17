@@ -1,10 +1,10 @@
 import React from 'react';
 
 // Components
-import { Container, Hero, Main, Box } from '..';
+import { Container, Hero, Main, Box, Body } from '..';
 
 // Images
-import RocketImg from '../../assets/images/rocket.jpg';
+import rocketImg from '../../assets/images/rocket.png';
 import placeholderImg from '../../assets/images/placholder.jpg';
 
 // Styles
@@ -20,41 +20,26 @@ export const Rocket = () => {
         />
       </Container>
       <Main>
-        <section>
+        <Box as="section">
           <Container fluid>
             <Box
               as="img"
               width={1}
+              mb={6}
               maxWidth="100%"
-              src={RocketImg}
+              src={rocketImg}
               alt="Rocket.com"
             />
           </Container>
           <Container>
-            <p>
+            <Body>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
               voluptate est nihil iste esse exercitationem sit, aspernatur
               voluptatem dolore consequuntur inventore quos. Quod obcaecati,
               consequatur cumque expedita nesciunt assumenda non!
-            </p>
+            </Body>
           </Container>
-          <Container fluid>
-            <Box
-              as="img"
-              width={1}
-              maxWidth="100%"
-              src={placeholderImg}
-              alt="Rocket.com"
-            />
-            <Box
-              as="img"
-              width={1}
-              maxWidth="100%"
-              src={placeholderImg}
-              alt="Rocket.com"
-            />
-          </Container>
-        </section>
+        </Box>
       </Main>
     </StyledRocket>
   );

@@ -9,11 +9,10 @@ import {
   Main,
   Box,
   Headline,
-  Body,
   Container,
   Footer,
-  Link
-} from '../../components';
+  Card
+} from '..';
 
 // Images
 import realtorImg from '../../assets/images/realtor.svg';
@@ -79,12 +78,9 @@ export const Home = () => {
       </StyledHomeHero>
       <Main className="main">
         <Box as="section" mb={{ _: 3, md: 6 }}>
-          <Container fluid>
+          <Container>
             <Headline mb={4}>Featured Work</Headline>
-            <Box as="img" width={1} mb={4} src={realtorImg} alt="Realtor.com" />
-            <Headline>Realtor.com</Headline>
-            <Body>Building a reusable UI component library in React.</Body>
-            <Link to="/work/realtor">See Project</Link>
+            <Card mb={4} imgSrc={realtorImg} header="Realtor.com" description="Building a reusable UI component library in React." link="/work/realtor" />
           </Container>
         </Box>
       </Main>

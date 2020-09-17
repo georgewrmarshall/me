@@ -16,6 +16,13 @@ export const About = () => {
         <Hero header="About" description="A designer who likes to code" />
         <Main>
           <Box as="section">
+            <Headline mb={4}>Front-end Developer / Designer</Headline>
+            <Body mb={5}>
+              I am a Front-end developer with a background in design. I create
+              pixel perfect web apps with intuitive, simple user experiences. I
+              have a strong taste for good design and constantly challenge
+              myself to learn new skills and technologies.
+            </Body>
             <Box
               borderRadius="100%;"
               width="200px"
@@ -24,15 +31,9 @@ export const About = () => {
               as="img"
               src={profileImg}
               alt="George Marshall"
+              mb={5}
             />
-            <Headline mb={4}>Front-end Developer / Designer</Headline>
-            <Body>
-              I am a Front-end developer with a background in design. I create
-              pixel perfect web apps with intuitive, simple user experiences. I
-              have a strong taste for good design and constantly challenge
-              myself to learn new skills and technologies.
-            </Body>
-            <Body>
+            <Body mb={5}>
               I started my career in New Zealand as a graphic designer in 2010.
               It was here I discovered my passion for simple, intuitive design
               and front-end development. Throughout my career I have

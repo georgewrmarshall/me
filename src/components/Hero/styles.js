@@ -6,8 +6,7 @@ export const StyledHero = styled.header`
     min-height: 420px;
     height: calc(100vh - 8rem);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
     h1 {
       text-transform: uppercase;

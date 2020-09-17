@@ -1,5 +1,6 @@
 import { buttonBase, buttonPrimary } from './button';
 import { linkBase, linkPrimary } from './link';
+import { card } from './card';
 import { colorsTheme } from './colors';
 import { footer } from './footer';
 import { logo } from './logo';
@@ -15,6 +16,7 @@ export const darkTheme = {
   buttonPrimary,
   linkPrimary,
   linkBase,
+  card,
   colorsTheme,
   footer,
   logo,
