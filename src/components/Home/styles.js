@@ -2,12 +2,37 @@ import styled, { css } from 'styled-components';
 import { lightTheme } from '../../components/themes';
 
 export const StyledHome = styled.div`
-  height: 100vh;
+
+  .main {
+    transition: opacity 0.75s;
+    transition-delay: 2.25s;
+    ${(props) => css`
+      @media ${props.theme.minWidth.md} {
+        margin-top: -8rem;
+      }
+    `}
+  }
+  
+`;
+
+StyledHome.defaultProps = {
+  theme: lightTheme
+}
+
+export const StyledHomeHero = styled.div`
   display: flex;
+  min-height: 420px;
+  height: calc(100vh - 5rem);
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
+
+  ${(props) => css`
+    @media ${props.theme.minWidth.md} {
+      height: 100vh;
+    }
+  `}
 
   h1 {
     ${(props) => css`
@@ -66,7 +91,7 @@ export const StyledHome = styled.div`
   }
 `;
 
-StyledHome.defaultProps = {
+StyledHomeHero.defaultProps = {
   theme: lightTheme
 }
 

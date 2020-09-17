@@ -6,13 +6,12 @@ import {
   Hero,
   Main,
   Headline,
-  Title,
   Body,
   Box,
-} from '../../components';
+} from '..';
 
 // Images
-import realtorImg from '../../assets/images/realtor.png';
+import realtorImg from '../../assets/images/realtor.svg';
 
 // Styles
 import { StyledRealtor } from './styles';
@@ -27,9 +26,16 @@ export const Realtor = () => {
         />
       </Container>
       <Main>
-        <Box as="section" mb={{_: 4, md: 6}}>
+        <Box as="section" mb={{ _: 4, md: 6 }}>
           <Container fluid>
-            <img src={realtorImg} alt="Realtor.com" />
+            <Box
+              as="img"
+              width={1}
+              maxWidth="100%"
+              mb={4}
+              src={realtorImg}
+              alt="Realtor.com"
+            />
           </Container>
           <Container>
             <Body>
@@ -41,7 +47,7 @@ export const Realtor = () => {
             </Body>
           </Container>
         </Box>
-        <Box as="section" mb={{_: 4, md: 6}}>
+        <Box as="section" mb={{ _: 4, md: 6 }}>
           <Container>
             <Headline mb={3}>The Problem</Headline>
             <Body mb={4}>
@@ -52,23 +58,25 @@ export const Realtor = () => {
               inconsistencies and inefficiencies being created:
             </Body>
             <ul>
-              <Body as="li">Duplication of components.</Body>
-              <Body as="li">Inconsistencies in the design of the component.</Body>
-              <Body as="li">
+              <Body as="li" mb={3}>Duplication of components.</Body>
+              <Body as="li" mb={3}>
+                Inconsistencies in the design of the component.
+              </Body>
+              <Body as="li" mb={3}>
                 Quality of components was compromised because of time
                 constraints in a sprint.
               </Body>
-              <Body as="li">
+              <Body as="li" mb={3}>
                 Accessibility and performance weren’t being taken into account.
               </Body>
-              <Body as="li">
+              <Body as="li" mb={3}>
                 No accountability for components or developers didn’t want to
                 take responsibility for them.
               </Body>
             </ul>
           </Container>
         </Box>
-        <Box as="section" mb={{_: 4, md: 6}}>
+        <Box as="section" mb={{ _: 4, md: 6 }}>
           <Container>
             <Headline mb={3}>The Solution</Headline>
             <Body mb={4}>
@@ -76,11 +84,13 @@ export const Realtor = () => {
               proposed. <br /> This would:
             </Body>
             <ul>
-              <Body as="li">Eliminate duplication of components.</Body>
-              <Body as="li">Ensure consistency in design, look and feel.</Body>
-              <Body as="li">Ensure the quality of the component.</Body>
-              <Body as="li">Ensure all components are accessible and performant.</Body>
-              <Body as="li">
+              <Body as="li" mb={3}>Eliminate duplication of components.</Body>
+              <Body as="li" mb={3}>Ensure consistency in design, look and feel.</Body>
+              <Body as="li" mb={3}>Ensure the quality of the component.</Body>
+              <Body as="li" mb={3}>
+                Ensure all components are accessible and performant.
+              </Body>
+              <Body as="li" mb={3}>
                 Allow a team to be responsible and held accountable for the
                 quality, maintenance and additions of new components to the
                 library.
@@ -88,7 +98,7 @@ export const Realtor = () => {
             </ul>
           </Container>
         </Box>
-        <Box as="section" mb={{_: 4, md: 6}}>
+        <Box as="section" mb={{ _: 4, md: 6 }}>
           <Container>
             <Headline mb={3}>Methodology and Process</Headline>
             <Body>
@@ -103,26 +113,26 @@ export const Realtor = () => {
               methodologies. Starting with the smallest possible component(or
               atoms) and building more complex components(or organisms) from
               there. We had 3 Design System Meetings(DSM) a week to discuss
-              component and system requirements. We would ask questions like: ‰
+              component and system requirements. We would ask questions like:
             </Body>
             <ul>
-              <Body as="li">
+              <Body as="li" mb={3}>
                 Is this component necessary? Does one already exist in another
                 form? If so can we push back and the designer can use the
                 component that already exists to solve the problem. Sometimes
                 less is more!
               </Body>
-              <Body as="li">
+              <Body as="li" mb={3}>
                 What are the requirements of this component and how could it be
                 customized? Are we building something that is scalable or
                 trapping ourselves with a component that is too specific?
               </Body>
-              <Body as="li">Does this component fit into the system?</Body>
+              <Body as="li" mb={3}>Does this component fit into the system?</Body>
             </ul>
             <Body mb={6}>
               Once the component was approved and added to the Design System we
               would build it using React, document it’s used and application
-              using storybook and had a dedicated Slack channel for the
+              using Storybook and had a dedicated Slack channel for the
               releases, bugs, support and questions. We also encouraged other
               developers outside of the Web Platform Team to contribute to the
               component library. This fostered ownership and enthusiasm for
@@ -131,7 +141,7 @@ export const Realtor = () => {
             </Body>
           </Container>
         </Box>
-        <Box as="section" mb={{_: 4, md: 6}}>
+        <Box as="section" mb={{ _: 4, md: 6 }}>
           <Container>
             <Headline mb={3}>Tools used</Headline>
             <Body>
@@ -139,22 +149,22 @@ export const Realtor = () => {
               Design System and UI Component Library.
             </Body>
             <Box>
-              <Title>Design:</Title>
+              <Body>Design:</Body>
               <ul>
-                <Body as="li">Invision DSM</Body>
-                <Body as="li">Sketch</Body>
+                <Body as="li" mb={3}>Invision DSM</Body>
+                <Body as="li" mb={3}>Sketch</Body>
               </ul>
-              <Title>Development:</Title>
+              <Body>Development:</Body>
               <ul>
-                <Body as="li">React</Body>
-                <Body as="li">Storybook</Body>
-                <Body as="li">React Testing Library</Body>
-                <Body as="li">Travis CI</Body>
+                <Body as="li" mb={3}>React</Body>
+                <Body as="li" mb={3}>Storybook</Body>
+                <Body as="li" mb={3}>React Testing Library</Body>
+                <Body as="li" mb={3}>Travis CI</Body>
               </ul>
             </Box>
           </Container>
         </Box>
-        <Box as="section" mb={{_: 4, md: 6}}>
+        <Box as="section" mb={{ _: 4, md: 6 }}>
           <Container>
             <Headline mb={3}>Conclusion</Headline>
             <Body>

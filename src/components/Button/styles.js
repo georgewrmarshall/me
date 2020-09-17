@@ -30,6 +30,7 @@ export const StyledButton = styled(StyledButtonBase)`
 
     &:hover, &:focus, &:active {
       background: ${props.theme.buttonPrimary.backgroundColorHover};
+      color: ${props.theme.buttonPrimary.color};
     }
 
     &[disabled] {

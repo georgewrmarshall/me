@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { space } from '@styled-system/space';
-import { flexbox } from '@styled-system/flexbox';
-import { grid } from '@styled-system/grid';
+import { space, flexbox, grid, layout, border } from 'styled-system';
 import { lightTheme } from "../themes";
 
 export const StyledBox = styled.div`
   ${space};
   ${flexbox};
   ${grid};
+  ${layout};
+  ${border};
 `;
 
 StyledBox.defaultProps = {

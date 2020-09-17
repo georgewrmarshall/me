@@ -7,14 +7,6 @@ export const StyledMain = styled.main`
     transition: opacity 0.5s;
     transition-delay: 0.5s;
     margin-bottom: 10rem;
-
-    section {
-      
-      img {
-        width: 100%;
-        margin-bottom: 2rem;
-      }
-    }
   `}
 `;
 

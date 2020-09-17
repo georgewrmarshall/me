@@ -6,7 +6,7 @@ export const StyledLinkBase = styled(Link)`
   ${(props) => css`
     display: inline-flex;
     align-items: center;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     text-decoration: none;
     font-family: ${props.theme.type.fontFamilyNav};
     font-size: ${props.theme.linkBase.fontSize};
@@ -25,6 +25,7 @@ export const StyledLinkPrimary = styled(StyledLinkBase)`
     border-color: ${props.theme.linkPrimary.borderColor};
 
     &:hover, &:focus, &:active {
+      color: ${props.theme.linkPrimary.colorHover};
       border-color: ${props.theme.linkPrimary.borderColorHover};
     }
   `}

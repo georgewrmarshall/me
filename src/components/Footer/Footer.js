@@ -23,6 +23,9 @@ export const Footer = () => (
           <li>
             <NavLink to="/contact">Contact</NavLink>
           </li>
+          <li>
+            <NavLink as="a" href="/me/design-system/?path=/story/design-system-introduction--page">Design System</NavLink>
+          </li>
         </ul>
       </nav>
       <ul>

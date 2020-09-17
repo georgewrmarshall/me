@@ -11,7 +11,7 @@ export const StyledHero = styled.header`
 
     h1 {
       text-transform: uppercase;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       overflow: hidden;
 
       @media ${props.theme.minWidth.md} {

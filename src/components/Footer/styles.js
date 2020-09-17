@@ -54,7 +54,7 @@ export const StyledFooter = styled.div`
   }
 
   li {
-    padding: 0 0.25rem;
+    padding: 0.25rem;
     
     ${(props) => css`
       @media ${props.theme.minWidth.xs} {

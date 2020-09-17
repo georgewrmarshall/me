@@ -27,13 +27,13 @@ export const StyledNavLink = styled(Link).attrs(props => ({
     ${props => css`
       content: '';
       position: absolute;
-      bottom: -3px;
-      transition: 0.15s;
+      bottom: -4px;
       left: 0;
       width: 100%;
       border-bottom: 3px solid ${props.theme.navLink.borderColor};
-      transform: translate(0%, 200%);
       opacity: 0;
+      /* transition: 0.15s; */
+      /* transform: translate(0%, 200%); */
     `}
   }
   &.active&::after {
