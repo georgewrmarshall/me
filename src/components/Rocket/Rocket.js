@@ -1,11 +1,11 @@
 import React from 'react';
 
 // Components
-import { Container, Hero, Main, Box, Body } from '..';
+import { Container, Hero, Main, Box, Body, Headline } from '..';
 
 // Images
 import rocketImg from '../../assets/images/rocket.png';
-import placeholderImg from '../../assets/images/placholder.jpg';
+import rocketImg2 from '../../assets/images/rocket2.png';
 
 // Styles
 import { StyledRocket } from './styles';
@@ -20,12 +20,12 @@ export const Rocket = () => {
         />
       </Container>
       <Main>
-        <Box as="section">
-          <Container fluid>
+        <Box as="section" mb={{ _: 4, md: 6 }}>
+          <Container>
             <Box
               as="img"
               width={1}
-              mb={6}
+              mb={4}
               maxWidth="100%"
               src={rocketImg}
               alt="Rocket.com"
@@ -33,10 +33,29 @@ export const Rocket = () => {
           </Container>
           <Container>
             <Body>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              voluptate est nihil iste esse exercitationem sit, aspernatur
-              voluptatem dolore consequuntur inventore quos. Quod obcaecati,
-              consequatur cumque expedita nesciunt assumenda non!
+              <em>
+                Rocket is a blockchain crowdfunding platform that allows
+                companies to issue cryptocurrencies to get funded.
+              </em>
+            </Body>
+          </Container>
+        </Box>
+        <Box as="section">
+          <Container>
+            <Headline mb={3}>Description</Headline>
+            <Body mb={6}>
+              I worked on the design of the application using sketch and then the Front-end application that was built in React.
+            </Body>
+            <Box
+              as="img"
+              width={1}
+              mb={4}
+              maxWidth="100%"
+              src={rocketImg2}
+              alt="Rocket.com"
+            />
+            <Body mb={6}>
+              <em>This company is no longer active.</em>
             </Body>
           </Container>
         </Box>

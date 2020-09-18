@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import { Container, Hero, Main, Headline, Body } from '..';
+import { Container, Hero, Main, Headline, Body, Box } from '..';
 
 // Styles
 import { StyledContact } from './styles';
@@ -11,8 +11,9 @@ export const Contact = () => {
     <StyledContact>
       <Hero header="Contact" description="Drop me a line" />
       <Main>
-        <Container>
-          <section>
+        <Box as="section" mb={{ _: 4, md: 6 }}>
+          <Container>
+            <Headline mb={3}>Based in Canada</Headline>
             <Body mb={4}>
               I'm currently living in the small surf town of{' '}
               <a
@@ -29,7 +30,11 @@ export const Contact = () => {
               </a>
               .
             </Body>
-            <Headline>You can contact me via</Headline>
+          </Container>
+        </Box>
+        <Box as="section" mb={{ _: 4, md: 6 }}>
+          <Container>
+            <Headline mb={3}>Contact Details</Headline>
             <Body mb={4}>
               <strong>m.</strong> +1 236 886 7214 <br />
               <strong>e.</strong> georgewrmarshall@gmail.com <br />
@@ -40,8 +45,8 @@ export const Contact = () => {
                 ✌️
               </span>
             </Body>
-          </section>
-        </Container>
+          </Container>
+        </Box>
       </Main>
     </StyledContact>
   );
