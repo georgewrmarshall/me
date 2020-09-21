@@ -11,7 +11,8 @@ import {
   Headline,
   Container,
   Footer,
-  Card
+  Card,
+  Callout
 } from '..';
 
 // Images
@@ -83,6 +84,7 @@ export const Home = () => {
             <Card mb={4} imgSrc={realtorImg} header="Realtor.com" description="Building a reusable UI component library in React." link="/work/realtor" />
           </Container>
         </Box>
+        <Callout pt={{_: 4}} header="Want to know what makes me tick?" btnText="See about me" btnLink="/about" />
       </Main>
       <Footer />
     </StyledHome>
