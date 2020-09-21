@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import { Container, Hero, Main, Headline, Body, Box } from '..';
+import { Container, Hero, Main, Headline, Body, Box, Callout } from '..';
 
 // Images
 import profileImg from '../../assets/images/profile.png';
@@ -15,7 +15,7 @@ export const About = () => {
       <Hero header="About" description="A designer who likes to code" />
       <Main>
         <Container>
-          <Box as="section" mb={{ _: 4, md: 6 }}>
+          <Box as="section" mb={{ _: 5, md: 6 }}>
             <Headline mb={4}>Front-end Developer / Designer</Headline>
             <Body mb={4}>
               I am a Front-end developer with a background in design. I create
@@ -26,12 +26,13 @@ export const About = () => {
             <Box
               borderRadius="100%;"
               width="200px"
-              margin="0 auto 2rem"
+              ml="auto"
+              mr="auto"
+              mb={4}
               display="block"
               as="img"
               src={profileImg}
               alt="George Marshall"
-              mb={4}
             />
             <Body mb={4}>
               I started my career in New Zealand as a graphic designer in 2010.
@@ -40,9 +41,13 @@ export const About = () => {
               continuously sought new challenges both in life and in work.
             </Body>
           </Box>
-          <Box as="section" mb={{ _: 4, md: 6 }}>
+          <Box as="section" mb={{ _: 5, md: 6 }}>
             <Headline mb={4}>Professional Mantra</Headline>
             <ul>
+              <Body as="li" mb={3}>
+                Pragmatic Programmers Approach: Easy to change, Don’t repeat
+                yourself, Orthogonal
+              </Body>
               <Body as="li" mb={3}>
                 User centred design rules everything around me.
               </Body>
@@ -53,18 +58,14 @@ export const About = () => {
                 Business goals are expressed in numbers or they mean 0.
               </Body>
               <Body as="li" mb={3}>
-                If you're not learning you're not living.
-              </Body>
-              <Body as="li" mb={3}>
-                Pragmatic Programmers Approach: Easy to change, Don’t repeat
-                yourself, Orthogonal
+                Equality, Diversity and Inclusion <a href="https://en.wikipedia.org/wiki/Equality,_Diversity_and_Inclusion" target="_blank" rel="noreferrer">ED&I</a>
               </Body>
               <Body as="li" mb={3}>
                 Environmentalist. David Suzuki is my spirit animal.
               </Body>
             </ul>
           </Box>
-          <Box as="section" mb={{ _: 4, md: 6 }}>
+          <Box as="section" mb={{ _: 5, md: 6 }}>
             <Headline mb={4}>Tools I use</Headline>
             <Body>
               <strong>Development:</strong> React/Redux/Javascript, HTML5,
@@ -83,6 +84,7 @@ export const About = () => {
             </Body>
           </Box>
         </Container>
+        <Callout pt={{_: 4}} header="Want to get in touch?" btnText="Contact me" btnLink="/contact" />
       </Main>
     </StyledAbout>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import { Container, Hero, Main, Card } from '..';
+import { Container, Hero, Main, Card, Callout } from '..';
 
 // Images
 import rocketImg from '../../assets/images/rocket.png';
@@ -32,6 +32,7 @@ export const Work = () => {
             link="/work/rocket"
           />
         </Container>
+        <Callout pt={{_: 4}} header="Want to know what makes me tick?" btnText="See about me" btnLink="/about" />
       </Main>
     </StyledWork>
   );

@@ -27,7 +27,7 @@ export const Card = ({
       />
       <Headline>{header}</Headline>
       <Body>{description}</Body>
-      <Link as="div">See Project</Link>
+      <Link as="div">See Project →</Link>
     </StyledCard>
   );
 };

@@ -26,7 +26,7 @@ export const StyledButton = styled(StyledButtonBase)`
   ${(props) => css`
     color: ${props.theme.buttonPrimary.color};
     background: ${props.theme.buttonPrimary.backgroundColor};
-    padding: 0 2rem;
+    padding: 0 ${`${props.theme.space[4]}px`};
 
     &:hover, &:focus, &:active {
       background: ${props.theme.buttonPrimary.backgroundColorHover};

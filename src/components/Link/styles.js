@@ -1,9 +1,11 @@
-import styled, { css } from "styled-components";
-import { lightTheme } from "../themes";
+import styled, { css } from 'styled-components';
+import { space } from 'styled-system';
+import { lightTheme } from '../themes';
 import { Link } from 'gatsby';
 
-export const StyledLinkBase = styled(Link)`  
-  ${(props) => css`
+export const StyledLinkBase = styled(Link)`
+  ${space}
+  ${props => css`
     display: inline-flex;
     align-items: center;
     border-bottom: 3px solid transparent;
@@ -13,18 +15,20 @@ export const StyledLinkBase = styled(Link)`
     text-transform: uppercase;
     letter-spacing: 0.15rem;
   `}
-`
+`;
 
 StyledLinkBase.defaultProps = {
   theme: lightTheme,
-}
+};
 
 export const StyledLinkPrimary = styled(StyledLinkBase)`
-  ${(props) => css`
+  ${props => css`
     color: ${props.theme.linkPrimary.color};
     border-color: ${props.theme.linkPrimary.borderColor};
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
       color: ${props.theme.linkPrimary.colorHover};
       border-color: ${props.theme.linkPrimary.borderColorHover};
     }

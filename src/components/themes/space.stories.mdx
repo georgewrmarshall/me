@@ -1,0 +1,90 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+import { space } from './space';
+import { baseColors, lightenDarkenColor } from './baseColors';
+import { Box } from '..';
+
+<Meta title="Design System/Space" />
+
+# Space
+
+The space key is a specially-named scale intended for use with margin, padding, and other layout-related CSS properties.
+
+`theme.space.1`
+
+```
+export const space = [0, 4, 8, 16, 32, 64, 128, 256, 512];
+```
+
+<Box>
+  <div
+    style={{ backgroundColor: `${lightenDarkenColor(baseColors.black, 200)}` }}
+  >
+    <code>theme.space.0</code><code>0px</code>
+  </div>
+  <Box mb={2} style={{ backgroundColor: `${baseColors.purple}` }}></Box>
+</Box>
+<Box mb={2}>
+  <div
+    style={{ backgroundColor: `${lightenDarkenColor(baseColors.black, 200)}` }}
+  >
+    <code>theme.space.1</code><code>4px</code>
+  </div>
+  <Box mb={2} pb={1} style={{ backgroundColor: `${baseColors.purple}` }}></Box>
+</Box>
+<Box mb={2}>
+  <div
+    style={{ backgroundColor: `${lightenDarkenColor(baseColors.black, 200)}` }}
+  >
+    <code>theme.space.2</code><code>8px</code>
+  </div>
+  <Box mb={2} pb={2} style={{ backgroundColor: `${baseColors.purple}` }}></Box>
+</Box>
+<Box mb={2}>
+  <div
+    style={{ backgroundColor: `${lightenDarkenColor(baseColors.black, 200)}` }}
+  >
+    <code>theme.space.3</code><code>16px</code>
+  </div>
+  <Box mb={2} pb={3} style={{ backgroundColor: `${baseColors.purple}` }}></Box>
+</Box>
+<Box mb={2}>
+  <div
+    style={{ backgroundColor: `${lightenDarkenColor(baseColors.black, 200)}` }}
+  >
+    <code>theme.space.4</code><code>32px</code>
+  </div>
+  <Box mb={2} pb={4} style={{ backgroundColor: `${baseColors.purple}` }}></Box>
+</Box>
+<Box mb={2}>
+  <div
+    style={{ backgroundColor: `${lightenDarkenColor(baseColors.black, 200)}` }}
+  >
+    <code>theme.space.5</code><code>64px</code>
+  </div>
+  <Box mb={2} pb={5} style={{ backgroundColor: `${baseColors.purple}` }}></Box>
+</Box>
+<Box mb={2}>
+  <div
+    style={{ backgroundColor: `${lightenDarkenColor(baseColors.black, 200)}` }}
+  >
+    <code>theme.space.6</code><code>128px</code>
+  </div>
+  <Box mb={2} pb={6} style={{ backgroundColor: `${baseColors.purple}` }}></Box>
+</Box>
+<Box mb={2}>
+  <div
+    style={{ backgroundColor: `${lightenDarkenColor(baseColors.black, 200)}` }}
+  >
+    <code>theme.space.7</code><code>256px</code>
+  </div>
+  <Box mb={2} pb={7} style={{ backgroundColor: `${baseColors.purple}` }}></Box>
+</Box>
+<Box mb={2}>
+  <div
+    style={{ backgroundColor: `${lightenDarkenColor(baseColors.black, 200)}` }}
+  >
+    <code>theme.space.8</code><code>512px</code>
+  </div>
+  <Box mb={2} pb={8} style={{ backgroundColor: `${baseColors.purple}` }}></Box>
+</Box>

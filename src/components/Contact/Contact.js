@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import { Container, Hero, Main, Headline, Body, Box } from '..';
+import { Container, Hero, Main, Headline, Body, Box, Callout } from '..';
 
 // Styles
 import { StyledContact } from './styles';
@@ -11,7 +11,7 @@ export const Contact = () => {
     <StyledContact>
       <Hero header="Contact" description="Drop me a line" />
       <Main>
-        <Box as="section" mb={{ _: 4, md: 6 }}>
+        <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>Based in Canada</Headline>
             <Body mb={4}>
@@ -32,7 +32,7 @@ export const Contact = () => {
             </Body>
           </Container>
         </Box>
-        <Box as="section" mb={{ _: 4, md: 6 }}>
+        <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>Contact Details</Headline>
             <Body mb={4}>
@@ -47,6 +47,7 @@ export const Contact = () => {
             </Body>
           </Container>
         </Box>
+        <Callout pt={{_: 4}} header="Want to checkout my projects?" btnText="View work" btnLink="/work" />
       </Main>
     </StyledContact>
   );

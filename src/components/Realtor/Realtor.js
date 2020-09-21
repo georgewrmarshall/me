@@ -1,14 +1,7 @@
 import React from 'react';
 
 // Components
-import {
-  Container,
-  Hero,
-  Main,
-  Headline,
-  Body,
-  Box,
-} from '..';
+import { Container, Hero, Main, Headline, Body, Box, Pagination } from '..';
 
 // Images
 import realtorImg from '../../assets/images/realtor.svg';
@@ -26,7 +19,7 @@ export const Realtor = () => {
         />
       </Container>
       <Main>
-        <Box as="section" mb={{ _: 4, md: 6 }}>
+        <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container fluid>
             <Box
               as="img"
@@ -40,14 +33,17 @@ export const Realtor = () => {
           <Container>
             <Body>
               <em>
-                Realtor.com is a leading home for sale website offering listings
-                and real estate-related information to over 40 million consumers
-                each month.
+                <a href="http://realtor.com" target="_blank" rel="noreferrer">
+                  Realtor.com
+                </a>{' '}
+                is a leading home for sale website offering listings and real
+                estate-related information to over 40 million consumers each
+                month.
               </em>
             </Body>
           </Container>
         </Box>
-        <Box as="section" mb={{ _: 4, md: 6 }}>
+        <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>The Problem</Headline>
             <Body mb={4}>
@@ -58,7 +54,9 @@ export const Realtor = () => {
               inconsistencies and inefficiencies being created:
             </Body>
             <ul>
-              <Body as="li" mb={3}>Duplication of components.</Body>
+              <Body as="li" mb={3}>
+                Duplication of components.
+              </Body>
               <Body as="li" mb={3}>
                 Inconsistencies in the design of the component.
               </Body>
@@ -76,7 +74,7 @@ export const Realtor = () => {
             </ul>
           </Container>
         </Box>
-        <Box as="section" mb={{ _: 4, md: 6 }}>
+        <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>The Solution</Headline>
             <Body mb={4}>
@@ -84,9 +82,15 @@ export const Realtor = () => {
               proposed. <br /> This would:
             </Body>
             <ul>
-              <Body as="li" mb={3}>Eliminate duplication of components.</Body>
-              <Body as="li" mb={3}>Ensure consistency in design, look and feel.</Body>
-              <Body as="li" mb={3}>Ensure the quality of the component.</Body>
+              <Body as="li" mb={3}>
+                Eliminate duplication of components.
+              </Body>
+              <Body as="li" mb={3}>
+                Ensure consistency in design, look and feel.
+              </Body>
+              <Body as="li" mb={3}>
+                Ensure the quality of the component.
+              </Body>
               <Body as="li" mb={3}>
                 Ensure all components are accessible and performant.
               </Body>
@@ -98,7 +102,7 @@ export const Realtor = () => {
             </ul>
           </Container>
         </Box>
-        <Box as="section" mb={{ _: 4, md: 6 }}>
+        <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>Methodology and Process</Headline>
             <Body>
@@ -127,11 +131,13 @@ export const Realtor = () => {
                 customized? Are we building something that is scalable or
                 trapping ourselves with a component that is too specific?
               </Body>
-              <Body as="li" mb={3}>Does this component fit into the system?</Body>
+              <Body as="li" mb={3}>
+                Does this component fit into the system?
+              </Body>
             </ul>
             <Body mb={6}>
               Once the component was approved and added to the Design System we
-              would build it using React, document it’s used and application
+              would build it using React, document it’s uses and application
               using Storybook and had a dedicated Slack channel for the
               releases, bugs, support and questions. We also encouraged other
               developers outside of the Web Platform Team to contribute to the
@@ -141,7 +147,7 @@ export const Realtor = () => {
             </Body>
           </Container>
         </Box>
-        <Box as="section" mb={{ _: 4, md: 6 }}>
+        <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>Tools used</Headline>
             <Body>
@@ -151,20 +157,32 @@ export const Realtor = () => {
             <Box>
               <Body>Design:</Body>
               <ul>
-                <Body as="li" mb={3}>Invision DSM</Body>
-                <Body as="li" mb={3}>Sketch</Body>
+                <Body as="li" mb={3}>
+                  Invision DSM
+                </Body>
+                <Body as="li" mb={3}>
+                  Sketch
+                </Body>
               </ul>
               <Body>Development:</Body>
               <ul>
-                <Body as="li" mb={3}>React</Body>
-                <Body as="li" mb={3}>Storybook</Body>
-                <Body as="li" mb={3}>React Testing Library</Body>
-                <Body as="li" mb={3}>Travis CI</Body>
+                <Body as="li" mb={3}>
+                  React
+                </Body>
+                <Body as="li" mb={3}>
+                  Storybook
+                </Body>
+                <Body as="li" mb={3}>
+                  React Testing Library
+                </Body>
+                <Body as="li" mb={3}>
+                  Travis CI
+                </Body>
               </ul>
             </Box>
           </Container>
         </Box>
-        <Box as="section" mb={{ _: 4, md: 6 }}>
+        <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>Conclusion</Headline>
             <Body>
@@ -175,6 +193,11 @@ export const Realtor = () => {
               they were using were to spec and fully supported by a dedicated
               team of developers.
             </Body>
+          </Container>
+        </Box>
+        <Box as="section" mb={{ _: 5, md: 6 }}>
+          <Container>
+            <Pagination linkNext="/work/rocket" />
           </Container>
         </Box>
       </Main>

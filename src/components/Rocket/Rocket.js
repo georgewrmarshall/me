@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import { Container, Hero, Main, Box, Body, Headline } from '..';
+import { Container, Hero, Main, Box, Body, Headline, Pagination } from '..';
 
 // Images
 import rocketImg from '../../assets/images/rocket.png';
@@ -20,7 +20,7 @@ export const Rocket = () => {
         />
       </Container>
       <Main>
-        <Box as="section" mb={{ _: 4, md: 6 }}>
+        <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Box
               as="img"
@@ -40,11 +40,12 @@ export const Rocket = () => {
             </Body>
           </Container>
         </Box>
-        <Box as="section">
+        <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>Description</Headline>
             <Body mb={6}>
-              I worked on the design of the application using sketch and then the Front-end application that was built in React.
+              I worked on the design of the application using sketch and then
+              the Front-end application that was built in React.
             </Body>
             <Box
               as="img"
@@ -57,6 +58,11 @@ export const Rocket = () => {
             <Body mb={6}>
               <em>This company is no longer active.</em>
             </Body>
+          </Container>
+        </Box>
+        <Box as="section" mb={{ _: 5, md: 6 }}>
+          <Container>
+            <Pagination linkPrev="/work/realtor" />
           </Container>
         </Box>
       </Main>

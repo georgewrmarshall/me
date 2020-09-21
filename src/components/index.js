@@ -2,6 +2,7 @@ export { SEO } from './SEO';
 export { Layout } from './Layout';
 export { Box } from './Box';
 export { Button } from './Button';
+export { Callout } from './Callout';
 export { Card } from './Card';
 export { Container } from './Container';
 export { Display, Headline, Title, Body, Info } from './Type';
@@ -12,6 +13,7 @@ export { Main } from './Main';
 export { Navbar } from './Navbar';
 export { NavbarToggle } from './NavbarToggle';
 export { NavLink } from './NavLink';
+export { Pagination } from './Pagination';
 export { ThemeToggle } from './ThemeToggle';
 export { lightTheme, darkTheme } from './themes';
 

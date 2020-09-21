@@ -9,7 +9,9 @@ import { navbarToggle } from './navbarToggle';
 import { navLink } from './navLink';
 import { type } from '../type';
 import { screenSize, minWidth, maxWidth, breakpoints } from '../mediaQueries';
+import { space } from '../space';
 import { themeToggle } from './themeToggle';
+
 
 export const lightTheme = {
   buttonBase,
@@ -28,5 +30,6 @@ export const lightTheme = {
   navLink,
   type,
   screenSize,
+  space,
   themeToggle,
 }
