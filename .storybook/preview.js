@@ -3,8 +3,10 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 
 import { ThemeProvider } from 'styled-components';
+import { StoryContext, StoryGetter, StoryWrapper } from '@storybook/addons';
+
 import { GlobalStyle } from '../src/components/Layout/styles';
-import { lightTheme } from '../src/components/themes/';
+import { lightTheme, darkTheme } from '../src/components';
 
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
@@ -24,19 +26,29 @@ window.___navigate = pathname => {
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
+  backgrounds: { disable: true }
 };
 
-/**
- * TODO
- * Need to figure out how to switch between themes
- */
-export const decorators = [
-  Story => (
-    <>
-      <ThemeProvider theme={lightTheme}>
-        <GlobalStyle theme={lightTheme} />
-        <Story />
-      </ThemeProvider>
-    </>
-  ),
-];
+export const globalTypes = {
+  theme: {
+    name: 'Theme',
+    description: 'Global theme for components',
+    defaultValue: 'light',
+    toolbar: {
+      icon: 'photo',
+      // array of plain string values or MenuItem shape (see below)
+      items: ['light', 'dark'],
+    },
+  },
+};
+
+const withThemeProvider = (Story, context) => {
+  const theme = context.globals.theme;
+  return (
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <GlobalStyle theme={theme === 'light' ? lightTheme : darkTheme} />
+      <Story {...context} />
+    </ThemeProvider>
+  );
+};
+export const decorators = [withThemeProvider];
