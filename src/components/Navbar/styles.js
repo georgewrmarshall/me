@@ -2,14 +2,12 @@ import styled, { css } from 'styled-components';
 import { lightTheme } from '../themes';
 
 export const StyledNavbar = styled.nav`
-  /* display: flex; */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1030;
   height: 64px;
-  /* border-bottom: 1px solid ${(props) => props.theme.navbar.borderColor}; */
 
   ${(props) => css`
     @media ${props.theme.minWidth.md} {

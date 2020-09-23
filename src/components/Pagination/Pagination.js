@@ -12,13 +12,13 @@ export const Pagination = ({ linkPrev, linkNext, ...props }) => {
     <StyledPagination {...props}>
       {linkPrev && (
         <Link to={linkPrev}>
-          <span>← Prev</span>
+          <span>← Prev Project</span>
           <span>← See Previous Project</span>
         </Link>
       )}
       {linkNext && (
         <Link to={linkNext} ml="auto">
-          <span>Next →</span>
+          <span>Next Project →</span>
           <span>See Next Project →</span>
         </Link>
       )}

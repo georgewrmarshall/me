@@ -1,20 +1,27 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import useDarkMode from 'use-dark-mode';
+import { useLockBodyScroll, useMedia } from 'react-use';
 
 import { NavLink, Container, ThemeToggle, NavbarToggle } from '..';
+import { maxWidth } from '../themes/mediaQueries';
 
 // Styles
 import { StyledNavbar } from './styles';
 
-export const Navbar = () => {
+export const Navbar = ({ ...props }) => {
   const [show, setShow] = useState(false);
   const darkMode = useDarkMode(false);
+  const isMobile = useMedia(maxWidth.md);
+
   const handleClickToggle = () => {
     setShow(!show);
   };
+
+  useLockBodyScroll(isMobile && show);
+
   return (
-    <StyledNavbar show={show}>
+    <StyledNavbar show={show} {...props}>
       <Container fluid>
         <div className="menu">
           <ul>

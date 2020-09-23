@@ -7,4 +7,5 @@ export const themeToggle = {
   railOnBackgroundColor: lightenDarkenColor(colorsTheme.blueDark, -16),
   knobOnBackgroundColor: colorsTheme.blueDark,
   knobDropshadowColor: `rgba(${hexToRgb(colorsTheme.blueDark)}, 0.5)`,
+  color: colorsTheme.headerFontColor,
 };

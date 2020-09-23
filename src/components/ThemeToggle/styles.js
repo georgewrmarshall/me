@@ -4,6 +4,7 @@ import { lightTheme } from '../themes';
 export const StyledThemeToggle = styled.div`
   position: relative;
   display: inline-block;
+  color: ${props => props.theme.themeToggle.color};
 
   input {
     display: none;
