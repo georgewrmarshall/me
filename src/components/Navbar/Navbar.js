@@ -18,6 +18,7 @@ export const Navbar = ({ ...props }) => {
     setShow(!show);
   };
 
+  // Prevent scrolling when mobile menu is open
   useLockBodyScroll(isMobile && show);
 
   return (
