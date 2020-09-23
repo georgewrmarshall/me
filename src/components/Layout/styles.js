@@ -1,3 +1,4 @@
+import { css } from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
 
 // Fonts
@@ -19,48 +20,56 @@ export const GlobalStyle = createGlobalStyle`
     font-display: swap;
   }
 
-  body {
-    font-family:${(props) => props.theme.type.fontFamilyBody};
-    margin: 0;
-    color: ${(props) => props.theme.colorsTheme.bodyFontColor};
-    background: ${(props) => props.theme.colorsTheme.bodyBackgroundColor};
-    transition: 0.3s;
-  }
+  ${props => css`
+    body {
+      font-family: ${props.theme.type.fontFamilyBody};
+      margin: 0;
+      color: ${props.theme.colorsTheme.bodyFontColor};
+      background: ${props.theme.colorsTheme.bodyBackgroundColor};
+      transition: 0.3s;
+    }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family:${(props) => props.theme.type.fontFamilyHeader};
-    font-weight: 900;
-    margin: 0;
-    color: ${(props) => props.theme.colorsTheme.headerFontColor};
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: ${props.theme.type.fontFamilyHeader};
+      font-weight: 900;
+      margin: 0;
+      color: ${props.theme.colorsTheme.headerFontColor};
+    }
 
-  p {
-    margin-top: 0;
-    line-height: 1.7;
+    p {
+      margin-top: 0;
+      line-height: 1.7;
+    }
 
-    a {
-      text-decoration: none;
-      display: inline-block;
-      color: ${(props) => props.theme.colorsTheme.bodyFontColor};
-      position: relative;
+    li,
+    p {
 
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 10%;
-        left: 0;
-        width: 100%;
-        border-bottom: 2px solid ${(props) => props.theme.colorsTheme.primary};
-      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        color: ${props.theme.colorsTheme.bodyFontColor};
+        position: relative;
 
-      &:hover, &:active, &:focus {
-        color: ${(props) => props.theme.colorsTheme.primary};
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 10%;
+          left: 0;
+          width: 100%;
+          border-bottom: 2px solid ${props.theme.colorsTheme.primary};
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: ${props.theme.colorsTheme.primary};
+        }
       }
     }
-  }
+  `}
 `;

@@ -8,6 +8,6 @@ export const linkBase = {
 export const linkPrimary = {
   borderColor: colorsTheme.primary,
   borderColorHover: colorsTheme.primaryDark,
-  color: colorsTheme.bodyFontColor,
+  color: colorsTheme.headerFontColor,
   colorHover: colorsTheme.primary,
 }

@@ -10,4 +10,5 @@ export const linkPrimary = {
   borderColorHover: colorsTheme.primaryDark,
   color: colorsTheme.bodyFontColor,
   colorHover: colorsTheme.primary,
+  colorVisited: colorsTheme.bodyFontColor,
 }

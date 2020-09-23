@@ -42,7 +42,7 @@ export const About = () => {
             </Body>
           </Box>
           <Box as="section" mb={{ _: 5, md: 6 }}>
-            <Headline mb={4}>Professional Mantra</Headline>
+            <Headline mb={4}>Professional mantra</Headline>
             <ul>
               <Body as="li" mb={3}>
                 Pragmatic Programmers Approach: Easy to change, Don’t repeat

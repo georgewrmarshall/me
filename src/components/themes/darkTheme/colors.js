@@ -8,7 +8,7 @@ export const colorsTheme = {
   primaryDark: lightenDarkenColor(baseColors.purple, -16),
   borderColor: lightenDarkenColor(baseColors.black, 40),
   headerFontColor: baseColors.white,
-  bodyFontColor: baseColors.white,
+  bodyFontColor: `rgba(${hexToRgb(baseColors.white)}, 0.85)`,
   bodyBackgroundColor: baseColors.black,
   // The disabled function takes an argument of color and makes it 50% opaque
   disabledFn: function (color) {

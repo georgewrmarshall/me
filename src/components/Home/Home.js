@@ -78,13 +78,13 @@ export const Home = () => {
         </Container>
       </StyledHomeHero>
       <Main className="main">
-        <Box as="section" mb={{ _: 3, md: 6 }}>
+        <Box as="section" mb={6}>
           <Container>
             <Headline mb={4}>Featured Work</Headline>
             <Card mb={4} imgSrc={realtorImg} header="Realtor.com" description="Building a reusable UI component library in React." link="/work/realtor" />
           </Container>
         </Box>
-        <Callout pt={{_: 4}} header="Want to know what makes me tick?" btnText="See about me" btnLink="/about" />
+        <Callout header="Want to know what makes me tick?" btnText="See about me" btnLink="/about" />
       </Main>
       <Footer />
     </StyledHome>

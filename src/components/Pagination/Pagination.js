@@ -8,7 +8,6 @@ import { Link } from '..';
 import { StyledPagination } from './styles';
 
 export const Pagination = ({ linkPrev, linkNext, ...props }) => {
-  console.log('linkNext: ', Boolean(linkNext), ', linkPrev:', Boolean(linkPrev), ', !linkPrev && linkNext:', !linkPrev && linkNext);
   return (
     <StyledPagination {...props}>
       {linkPrev && (
