@@ -39,7 +39,6 @@ export const Footer = () => {
                 checked={darkMode.value}
                 onChange={darkMode.toggle}
                 id="footer-theme-toggle"
-                name="footer-theme-toggle"
               />
             </li>
           </ul>

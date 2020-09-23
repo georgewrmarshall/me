@@ -35,7 +35,6 @@ export const Navbar = () => {
                 checked={darkMode.value}
                 onChange={darkMode.toggle}
                 id="navbar-theme-toggle"
-                name="navbar-theme-toggle"
               />
             </li>
           </ul>
