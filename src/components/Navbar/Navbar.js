@@ -34,11 +34,13 @@ export const Navbar = () => {
               <ThemeToggle
                 checked={darkMode.value}
                 onChange={darkMode.toggle}
+                id="navbar-theme-toggle"
+                name="navbar-theme-toggle"
               />
             </li>
           </ul>
         </div>
-        <Link className="brand" to="/">
+        <Link className="brand" to="/" aria-label="GM">
           <svg
             width="32"
             height="32"

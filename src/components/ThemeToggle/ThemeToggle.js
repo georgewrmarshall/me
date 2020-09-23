@@ -11,8 +11,6 @@ export const ThemeToggle = ({ checked, onChange, ...props }) => {
         <input
           checked={checked}
           onChange={onChange}
-          name="darkMode"
-          id="darkMode"
           type="checkbox"
         />
       </label>
