@@ -1,14 +1,14 @@
 import React from 'react';
 
 // Components
-import { SEO, Layout, Navbar, Rocket, Footer } from '../../components';
+import { SEO, Layout, Navbar, Vanbex, Footer } from '../../components';
 
 const RocketPage = () => (
   <>
-    <SEO title="Rocket" />
+    <SEO title="Vanbex" />
     <Layout>
       <Navbar />
-      <Rocket />
+      <Vanbex />
       <Footer />
     </Layout>
   </>

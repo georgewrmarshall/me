@@ -5,7 +5,7 @@ import { SEO, Layout, Navbar, Work, Footer } from '../../components';
 
 const WorkPage = () => (
     <>
-      <SEO title="Home" />
+      <SEO title="Work" />
       <Layout>
         <Navbar />
         <Work />

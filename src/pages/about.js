@@ -5,7 +5,7 @@ import { SEO, Layout, Navbar, About, Footer } from '../components';
 
 const AboutPage = () => (
     <>
-      <SEO title="Home" />
+      <SEO title="About" />
       <Layout>
         <Navbar />
         <About />

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Components
-import { Headline, Body, Link, Box } from '..';
+import { Headline, Body, Link, Box, Info } from '..';
 
 // Styles
 import { StyledCard } from './styles';
@@ -10,6 +10,7 @@ import { StyledCard } from './styles';
 export const Card = ({
   children,
   header,
+  info,
   description,
   imgSrc,
   link,
@@ -21,13 +22,14 @@ export const Card = ({
         as="img"
         width={1}
         maxWidth="100%"
-        mb={4}
+        mb={3}
         src={imgSrc}
-        alt={header} 
+        alt={header}
       />
+      {info && <Info>{info}</Info>}
       <Headline>{header}</Headline>
       <Body>{description}</Body>
-      <Link as="div">See Project →</Link>
+      <Link as="span">See Project →</Link>
     </StyledCard>
   );
 };

@@ -23,5 +23,6 @@ export { Work } from './Work';
 export { About } from './About';
 export { Contact } from './Contact';
 export { Realtor } from './Realtor';
+export { Vanbex } from './Vanbex';
 export { Rocket } from './Rocket';
 export { NotFound } from './NotFound';

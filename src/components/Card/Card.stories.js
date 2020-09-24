@@ -10,6 +10,7 @@ export default {
   argTypes: {
     header: { control: 'text' },
     description: { control: 'text' },
+    info: { control: 'text' },
   },
 };
 
@@ -24,6 +25,7 @@ DefaultStory.story = {
 
 DefaultStory.args = {
   header: 'Header',
+  info: 'info',
   description: 'This is the description of the card',
   imgSrc: placeholderImg
 };

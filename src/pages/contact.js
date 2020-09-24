@@ -5,7 +5,7 @@ import { SEO, Layout, Navbar, Contact, Footer} from '../components';
 
 const ContactPage = () => (
     <>
-      <SEO title="Home" />
+      <SEO title="Contact" />
       <Layout>
         <Navbar />
         <Contact />

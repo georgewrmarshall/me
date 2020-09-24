@@ -5,7 +5,7 @@ import { SEO, Layout, Navbar, Realtor, Footer } from '../../components';
 
 const RealtorPage = () => (
     <>
-      <SEO title="Home" />
+      <SEO title="Realtor" />
       <Layout>
         <Navbar />
         <Realtor />
