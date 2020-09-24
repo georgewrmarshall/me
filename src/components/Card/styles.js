@@ -10,6 +10,10 @@ export const StyledCard = styled(GLink)`
     cursor: pointer;
     text-decoration: none;
     color: ${props.theme.card.color};
+
+    .info {
+      color: ${props.theme.colorsTheme.muted};
+    }
   `}
 `;
 

@@ -10,6 +10,7 @@ export const colorsTheme = {
   headerFontColor: baseColors.white,
   bodyFontColor: `rgba(${hexToRgb(baseColors.white)}, 0.85)`,
   bodyBackgroundColor: baseColors.black,
+  muted: `rgba(${hexToRgb(baseColors.white)}, 0.5)`,
   // The disabled function takes an argument of color and makes it 50% opaque
   disabledFn: function (color) {
     return `rgba(${hexToRgb(color)}, 0.5)`;

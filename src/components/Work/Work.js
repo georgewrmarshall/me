@@ -7,7 +7,8 @@ import { Container, Hero, Main, Card, Callout } from '..';
 import vanbexImg from '../../assets/images/vanbex.png';
 import rocketImg from '../../assets/images/rocket.png';
 import realtorImg from '../../assets/images/realtor.svg';
-
+import actionImg from '../../assets/images/action-market-research.svg';
+import rundleImg from '../../assets/images/rundle.png';
 
 // Styles
 import { StyledWork } from './styles';
@@ -15,7 +16,7 @@ import { StyledWork } from './styles';
 export const Work = () => {
   return (
     <StyledWork>
-      <Hero header="Work" description="Selected projects from 2015 - 2020" />
+      <Hero header="Work" description="Selected projects from 2017 - 2020" />
       <Main>
         <Container>
           <Card
@@ -31,8 +32,7 @@ export const Work = () => {
             imgSrc={rocketImg}
             header="Rocket"
             info="2018 - 2019"
-            description="Building the Front-end for a crowdfunding application using smart
-            contracts on the Ethereum blockchain."
+            description="A crowdfunding application on the Ethereum blockchain."
             link="/work/rocket"
           />
           <Card
@@ -40,11 +40,36 @@ export const Work = () => {
             imgSrc={vanbexImg}
             header="Vanbex"
             info="2018 - 2019"
-            description="A marketing website for the blockchain and cryptocurrency services company."
+            description="A marketing website for a blockchain and cryptocurrency services company."
             link="/work/vanbex"
           />
+          <Card
+            mb={6}
+            imgSrc={actionImg}
+            header="Action Market Research"
+            info="2017"
+            description="A website for a market research company."
+            link="http://www.actionresearch.com.au/"
+            target="_blank"
+            rel="noreferrer"
+          />
+          <Card
+            mb={6}
+            imgSrc={rundleImg}
+            header="Rundle Place"
+            info="2017"
+            description="A website for Rundle Place, Adelaide's premier destination for high-end shopping."
+            link="https://www.rundleplace.com.au/"
+            target="_blank"
+            rel="noreferrer"
+          />
         </Container>
-        <Callout pt={{_: 4}} header="Want to know what makes me tick?" btnText="See about me" btnLink="/about" />
+        <Callout
+          pt={{ _: 4 }}
+          header="Want to know what makes me tick?"
+          btnText="See about me"
+          btnLink="/about"
+        />
       </Main>
     </StyledWork>
   );

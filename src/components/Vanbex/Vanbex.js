@@ -24,7 +24,7 @@ export const Vanbex = () => {
       <Container>
         <Hero
           header="Vanbex"
-          description="A marketing website for the blockchain and cryptocurrency services company."
+          description="A marketing website for a blockchain and cryptocurrency services company."
         />
       </Container>
       <Main>
@@ -52,7 +52,7 @@ export const Vanbex = () => {
         <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>Overview</Headline>
-            <Body mb={6}>
+            <Body mb={4}>
               I worked on the marketing websites Front-end application that was
               build in express, HTML5 and CSS3.
             </Body>

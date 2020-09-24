@@ -43,7 +43,7 @@ export const Rocket = () => {
         <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>Overview</Headline>
-            <Body mb={6}>
+            <Body mb={4}>
               I worked on the design of the application using sketch and then
               the Front-end application that was built in React.
             </Body>

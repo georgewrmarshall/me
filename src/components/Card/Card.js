@@ -26,7 +26,7 @@ export const Card = ({
         src={imgSrc}
         alt={header}
       />
-      {info && <Info>{info}</Info>}
+      {info && <Info className="info">{info}</Info>}
       <Headline>{header}</Headline>
       <Body>{description}</Body>
       <Link as="span">See Project →</Link>
