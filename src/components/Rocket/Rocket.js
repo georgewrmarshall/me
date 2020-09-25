@@ -1,7 +1,16 @@
 import React from 'react';
 
 // Components
-import { Container, Hero, Main, Box, Body, Headline, Pagination, Callout } from '..';
+import {
+  Container,
+  Hero,
+  Main,
+  Box,
+  Body,
+  Headline,
+  Pagination,
+  Callout,
+} from '..';
 
 // Images
 import rocketImg from '../../assets/images/rocket.png';
@@ -21,7 +30,7 @@ export const Rocket = () => {
       </Container>
       <Main>
         <Box as="section" mb={{ _: 5, md: 6 }}>
-          <Container>
+          <Container fluid>
             <Box
               as="img"
               width={1}
@@ -43,10 +52,12 @@ export const Rocket = () => {
         <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>Overview</Headline>
-            <Body mb={4}>
+            <Body mb={{ _: 4, md: 5 }}>
               I worked on the design of the application using sketch and then
               the Front-end application that was built in React.
             </Body>
+          </Container>
+          <Container fluid>
             <Box
               as="img"
               width={1}
@@ -55,6 +66,8 @@ export const Rocket = () => {
               src={rocketImg2}
               alt="Rocket.com"
             />
+          </Container>
+          <Container>
             <Body mb={6}>
               <em>This company is no longer active.</em>
             </Body>
