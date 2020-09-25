@@ -14,6 +14,7 @@ import {
 
 // Images
 import VanbexImg from '../../assets/images/vanbex.png';
+import VanbexImg2 from '../../assets/images/vanbex2.png';
 
 // Styles
 import { StyledVanbex } from './styles';
@@ -29,7 +30,7 @@ export const Vanbex = () => {
       </Container>
       <Main>
         <Box as="section" mb={{ _: 5, md: 6 }}>
-          <Container>
+          <Container fluid>
             <Box
               as="img"
               width={1}
@@ -52,10 +53,18 @@ export const Vanbex = () => {
         <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
             <Headline mb={3}>Overview</Headline>
-            <Body mb={4}>
+            <Body mb={{ _: 4, md: 5 }}>
               I worked on the marketing websites Front-end application that was
-              build in express, HTML5 and CSS3.
+              build in express, HTML5 and CSS3. Designed by <a href="https://sixzero.co/" target="blank" rel="noreferrer">sixzero</a>
             </Body>
+            <Box
+              as="img"
+              width={1}
+              mb={4}
+              maxWidth="100%"
+              src={VanbexImg2}
+              alt="Vanbex.com"
+            />
             <Body mb={6}>
               <em>This company is no longer active.</em>
             </Body>
@@ -63,7 +72,7 @@ export const Vanbex = () => {
         </Box>
         <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
-            <Pagination linkPrev="/work/rocket" />
+            <Pagination linkPrev="/work/rocket" linkNext="/work/action-market-research" />
           </Container>
         </Box>
         <Callout

@@ -1,0 +1,1 @@
+export { ActionMarketResearch } from './ActionMarketResearch';

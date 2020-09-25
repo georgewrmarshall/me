@@ -14,6 +14,7 @@ export const StyledLinkBase = styled(Link)`
     font-size: ${props.theme.linkBase.fontSize};
     text-transform: uppercase;
     letter-spacing: 0.15rem;
+    cursor: pointer;
   `}
 `;
 

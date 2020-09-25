@@ -3,7 +3,7 @@ import React from 'react';
 // Components
 import { SEO, Layout, Navbar, Vanbex, Footer } from '../../components';
 
-const RocketPage = () => (
+const VanbexPage = () => (
   <>
     <SEO title="Vanbex" />
     <Layout>
@@ -13,4 +13,4 @@ const RocketPage = () => (
     </Layout>
   </>
 );
-export default RocketPage;
+export default VanbexPage;

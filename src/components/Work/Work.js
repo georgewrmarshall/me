@@ -49,19 +49,15 @@ export const Work = () => {
             header="Action Market Research"
             info="2017"
             description="A website for a market research company."
-            link="http://www.actionresearch.com.au/"
-            target="_blank"
-            rel="noreferrer"
+            link="/work/action-market-research"
           />
           <Card
             mb={6}
             imgSrc={rundleImg}
             header="Rundle Place"
             info="2017"
-            description="A website for Rundle Place, Adelaide's premier destination for high-end shopping."
-            link="https://www.rundleplace.com.au/"
-            target="_blank"
-            rel="noreferrer"
+            description="A website for a high-end shopping destination."
+            link="/work/rundle-place"
           />
         </Container>
         <Callout
