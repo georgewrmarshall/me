@@ -1,4 +1,4 @@
 # ME
 A portfolio website
 
-[View website](https://georgemarshall-.github.io/me)
+[View website](https://georgewrmarshall.github.io/me)
