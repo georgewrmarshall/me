@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{kYh0:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),r=t("Kvkj");n.default=function(){return l.a.createElement(l.a.Fragment,null,l.a.createElement(r.u,{title:"Home"}),l.a.createElement(r.m,null,l.a.createElement(r.q,null),l.a.createElement(r.s,null),l.a.createElement(r.h,null)))}}}]);
-//# sourceMappingURL=component---src-pages-work-realtor-js-75fd56a8efcd20727f0e.js.map
