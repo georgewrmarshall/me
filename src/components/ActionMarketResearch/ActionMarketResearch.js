@@ -65,8 +65,8 @@ export const ActionMarketResearch = () => {
               </a>
             </Body>
             <Link
+              as="a"
               href="http://www.actionresearch.com.au/"
-              target="_blank"
               target="_blank"
               rel="noreferrer"
             >

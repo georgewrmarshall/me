@@ -54,7 +54,7 @@ export const Realtor = () => {
         </Box>
         <Box as="section" mb={{ _: 5, md: 6 }}>
           <Container>
-            <Headline mb={3}>The Problem</Headline>
+            <Headline mb={3}>Overview</Headline>
             <Body mb={4}>
               The current consumer-facing product was in the early-mid stages of
               moving from a Ruby application to a Next.js/React application.

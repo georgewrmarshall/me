@@ -67,7 +67,7 @@ export const RundlePlace = () => {
             <Link
               href="https://www.rundleplace.com.au/"
               target="_blank"
-              target="_blank"
+              as="a"
               rel="noreferrer"
             >
               Visit the website
