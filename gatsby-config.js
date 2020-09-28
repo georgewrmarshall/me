@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '/me',
   siteMetadata: {
     title: `George Marshall - Front-end Developer &amp; Designer`,
-    description: `I am a front-end developer and designer. I like to approach products with a focus on business goals and user centered design. Let's talk.`,
+    description: `I am a Front-end developer with a background in design. I like to approach design and development with a component driven methodology. Let's talk.`,
     author: `@gatsbyjs`,
   },
   plugins: [
