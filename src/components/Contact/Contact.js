@@ -15,13 +15,13 @@ export const Contact = () => {
           <Container>
             <Headline mb={3}>Based in Canada</Headline>
             <Body mb={4}>
-              I'm currently living in the small surf town of{' '}
+              I'm currently living in the small ski town of{' '}
               <a
-                href="https://www.google.com/maps/place/Ucluelet,+BC/@48.9410902, -125.5991609,13z/data=!3m1!4b1!4m5!3m4!1s0x548973b97150e2bb:0xdb5f97b887c7db84!8m2!3d48.9415997!4d-125.5463446"
+                href="https://www.google.com/maps/place/Rossland,+BC/@49.0770864,-117.8371178,13z/data=!3m1!4b1!4m5!3m4!1s0x5362da91a3fef0d3:0xa1299371f32020f9!8m2!3d49.0781415!4d-117.8000037"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ucluelet, BC
+                Rossland, BC
               </a>
               . I always enjoy hearing about new projects so send me an email or
               connect with me on{' '}
@@ -47,7 +47,12 @@ export const Contact = () => {
             </Body>
           </Container>
         </Box>
-        <Callout pt={{_: 4}} header="Want to checkout my projects?" btnText="View work" btnLink="/work" />
+        <Callout
+          pt={{ _: 4 }}
+          header="Want to checkout my projects?"
+          btnText="View work"
+          btnLink="/work"
+        />
       </Main>
     </StyledContact>
   );
