@@ -18,14 +18,11 @@ const Template = args => <Card {...args} />;
 
 export const DefaultStory = Template.bind({});
 
-
-DefaultStory.story = {
-  name: 'Default',
-};
+DefaultStory.storyName = 'Default';
 
 DefaultStory.args = {
   header: 'Header',
   info: 'info',
   description: 'This is the description of the card',
-  imgSrc: placeholderImg
+  imgSrc: placeholderImg,
 };

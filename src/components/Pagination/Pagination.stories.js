@@ -15,9 +15,7 @@ const Template = args => <Pagination {...args} />;
 
 export const DefaultStory = Template.bind({});
 
-DefaultStory.story = {
-  name: 'Default',
-};
+DefaultStory.storyName = 'Default';
 
 DefaultStory.args = {
   linkPrev: '/',

@@ -12,6 +12,4 @@ const Template = args => <Footer {...args} />;
 
 export const DefaultStory = Template.bind({});
 
-DefaultStory.story = {
-  name: 'Default',
-};
+DefaultStory.storyName = 'Default';

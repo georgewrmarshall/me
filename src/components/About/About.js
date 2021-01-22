@@ -111,8 +111,7 @@ export const About = () => {
                 Honesty, transparency and open mindedness
               </Body>
               <Body as="li" mb={3}>
-                If you’re not learning you’re not living. Stay on top of the
-                curve
+                If you’re not learning you’re not living. Stay current
               </Body>
               <Body as="li" mb={3}>
                 Teamwork and collaboration

@@ -5,7 +5,7 @@ import { Hero } from './Hero';
 export default {
   title: 'Components/Hero',
   component: Hero,
-    argTypes: {
+  argTypes: {
     header: { control: 'text' },
     description: { control: 'text' },
   },
@@ -15,12 +15,9 @@ const Template = args => <Hero {...args} />;
 
 export const DefaultStory = Template.bind({});
 
-DefaultStory.story = {
-  name: 'Default',
-};
+DefaultStory.storyName = 'Default';
 
 DefaultStory.args = {
   header: 'Header',
   description: 'Description',
 };
-
