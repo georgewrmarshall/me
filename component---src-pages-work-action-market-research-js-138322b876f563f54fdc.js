@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{rGZU:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),r=n("Kvkj");t.default=function(){return l.a.createElement(l.a.Fragment,null,l.a.createElement(r.A,{title:"Action Market Research"}),l.a.createElement(r.p,null,l.a.createElement(r.t,null),l.a.createElement(r.b,null),l.a.createElement(r.k,null)))}}}]);
+//# sourceMappingURL=component---src-pages-work-action-market-research-js-138322b876f563f54fdc.js.map
