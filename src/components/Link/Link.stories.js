@@ -18,4 +18,5 @@ DefaultStory.storyName = 'Default';
 
 DefaultStory.args = {
   children: 'link',
+  to: '#'
 };

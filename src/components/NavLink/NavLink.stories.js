@@ -11,17 +11,13 @@ export default {
   },
 };
 
-const Template = args => (
-  <NavLink className={args.active && 'active'} {...args}>
-    {args.children}
-  </NavLink>
-);
+const Template = args => <NavLink className={args.active && 'active'} {...args}>{args.children}</NavLink>;
 
 export const DefaultStory = Template.bind({});
 
 DefaultStory.args = {
   children: 'NavLink',
-  active: false,
+  to: '#'
 };
 
 DefaultStory.storyName = 'Default';
