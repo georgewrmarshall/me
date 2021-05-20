@@ -16,14 +16,14 @@ import { StyledWork } from './styles';
 export const Work = () => {
   return (
     <StyledWork>
-      <Hero header="Work" description="Selected projects from 2017 - 2020" />
+      <Hero header="Work" description="Selected projects from 2017 - 2021" />
       <Main>
         <Container>
           <Card
             mb={6}
             imgSrc={realtorImg}
             header="Realtor.com"
-            info="2019 - Current"
+            info="2019 - 2021"
             description="Building a reusable UI component library in React."
             link="/work/realtor"
           />
