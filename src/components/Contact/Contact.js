@@ -38,6 +38,11 @@ export const Contact = () => {
             <Body mb={4}>
               <strong>m.</strong> +1 236 886 7214 <br />
               <strong>e.</strong> georgewrmarshall@gmail.com <br />
+              <strong>g.</strong>{' '}
+              <a href="https://github.com/georgewrmarshall" target="_blank">
+                github.com/georgewrmarshall
+              </a>{' '}
+              <br />
             </Body>
             <Body>
               Thanks for visiting!{' '}
