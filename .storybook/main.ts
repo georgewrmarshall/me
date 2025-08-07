@@ -13,7 +13,33 @@ const config: StorybookConfig = {
   ],
   "framework": {
     "name": "@storybook/react-vite",
-    "options": {}
+    "options": {
+      "builder": {
+        "viteConfigPath": undefined
+      }
+    }
+  },
+  viteFinal: async (config) => {
+    const { mergeConfig } = await import('vite');
+    const { default: react } = await import('@vitejs/plugin-react');
+    
+    return mergeConfig(config, {
+      plugins: [
+        react({
+          include: /\.(js|jsx|ts|tsx)$/,
+          jsxRuntime: 'automatic'
+        })
+      ],
+      optimizeDeps: {
+        esbuildOptions: {
+          jsx: 'automatic',
+          loader: {
+            '.js': 'jsx',
+            '.ts': 'tsx'
+          }
+        }
+      }
+    });
   }
 };
 export default config;
