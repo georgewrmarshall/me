@@ -37,13 +37,24 @@
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
-    "@storybook/addon-actions": "^6.1.15",
-    "@storybook/addon-essentials": "^6.1.15",
-    "@storybook/addon-links": "^6.1.15",
-    "@storybook/react": "^6.1.15",
+    "@chromatic-com/storybook": "^4.1.0",
+    "@storybook/addon-a11y": "^9.1.1",
+    "@storybook/addon-docs": "9.1.1",
+    "@storybook/addon-links": "^9.1.1",
+    "@storybook/addon-vitest": "^9.1.1",
+    "@storybook/react-vite": "^9.1.1",
+    "@types/node": "^24.2.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
     "babel-loader": "^10.0.0",
+    "playwright": "^1.54.2",
     "prettier": "^3.6.2",
-    "react-is": "^19.1.1"
+    "react-is": "^19.1.1",
+    "storybook": "^9.1.1",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   },
   "keywords": [
     "gatsby"
@@ -58,8 +69,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "storybook build",
+    "storybook": "storybook dev -p 6006"
   },
   "repository": {
     "type": "git",
