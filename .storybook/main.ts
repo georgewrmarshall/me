@@ -30,12 +30,20 @@ const config: StorybookConfig = {
           jsxRuntime: 'automatic'
         })
       ],
+      define: {
+        'process.env': {},
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+        'global': 'globalThis',
+      },
       optimizeDeps: {
         esbuildOptions: {
           jsx: 'automatic',
           loader: {
             '.js': 'jsx',
             '.ts': 'tsx'
+          },
+          define: {
+            global: 'globalThis',
           }
         }
       }
