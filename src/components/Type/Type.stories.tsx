@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import type { Meta, StoryObj } from '@storybook/react';
 import { Body } from './Body';
 import { Display } from './Display';
 import { Headline } from './Headline';
@@ -24,7 +24,7 @@ export default meta;
 type Story = StoryObj<TypographyProps>;
 
 export const TypeRamp: Story = {
-  render: (args) => (
+  render: args => (
     <>
       <Display mb={4}>
         {args.children || `Display D/4rem(64px) M/3rem(48px)`}
