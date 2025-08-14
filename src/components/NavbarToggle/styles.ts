@@ -36,7 +36,10 @@ export const StyledNavbarToggle = styled.button<StyledNavbarToggleProps>`
       position: absolute;
       right: 0;
       border-radius: 3px;
-      transition: transform 0.3s, top 0.3s, background-color 0s;
+      transition:
+        transform 0.3s,
+        top 0.3s,
+        background-color 0s;
     }
 
     &::before {

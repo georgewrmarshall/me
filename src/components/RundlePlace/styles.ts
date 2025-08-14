@@ -11,5 +11,5 @@ export const StyledRundlePlace = styled.div`
 `;
 
 StyledRundlePlace.defaultProps = {
-  theme: lightTheme
-}
+  theme: lightTheme,
+};

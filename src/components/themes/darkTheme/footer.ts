@@ -6,4 +6,4 @@ export const footer = {
   color: colorsTheme.bodyFontColor,
   borderColor: colorsTheme.borderColor,
   logoColor: colorsTheme.headerFontColor,
-}
+};

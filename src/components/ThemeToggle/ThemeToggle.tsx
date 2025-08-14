@@ -9,7 +9,12 @@ interface ThemeToggleProps {
   [key: string]: any;
 }
 
-export const ThemeToggle = ({ checked, onChange, id, ...props }: ThemeToggleProps) => {
+export const ThemeToggle = ({
+  checked,
+  onChange,
+  id,
+  ...props
+}: ThemeToggleProps) => {
   return (
     <StyledThemeToggle darkMode={checked} {...props}>
       <label htmlFor={id}>

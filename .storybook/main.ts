@@ -1,20 +1,11 @@
-module.exports = {
+import type { StorybookConfig } from '@storybook/react-vite';
+
+const config: StorybookConfig = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
-  webpackFinal: async (config: any) => {
-    if (!config.module?.rules) return config;
-
-    // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
-    const babelRule = config.module.rules.find(
-      (rule: any) =>
-        typeof rule === 'object' && rule?.test?.toString().includes('jsx?'),
-    );
-
-    if (babelRule && typeof babelRule === 'object' && 'exclude' in babelRule) {
-      babelRule.exclude = [/node_modules\/(?!(gatsby)\/)/];
-    }
-
-    return config;
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
   },
   typescript: {
     reactDocgen: 'react-docgen-typescript',
@@ -25,3 +16,5 @@ module.exports = {
     },
   },
 };
+
+export default config;

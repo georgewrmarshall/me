@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { StyledInfo } from "./styles";
+import { StyledInfo } from './styles';
 
 interface InfoProps {
   children?: React.ReactNode;
@@ -8,9 +8,5 @@ interface InfoProps {
 }
 
 export const Info = ({ children, ...props }: InfoProps) => {
-  return (
-    <StyledInfo {...props}>
-      {children}
-    </StyledInfo>
-  );
+  return <StyledInfo {...props}>{children}</StyledInfo>;
 };

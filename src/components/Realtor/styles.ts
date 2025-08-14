@@ -11,5 +11,5 @@ export const StyledRealtor = styled.div`
 `;
 
 StyledRealtor.defaultProps = {
-  theme: lightTheme
-}
+  theme: lightTheme,
+};

@@ -25,5 +25,5 @@ DefaultStory.args = {
   info: 'info',
   description: 'This is the description of the card',
   imgSrc: placeholderImg,
-  to: '#'
+  to: '#',
 };

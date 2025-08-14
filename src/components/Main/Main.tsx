@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import { StyledMain } from "./styles";
+import { StyledMain } from './styles';
 
 interface MainProps {
   children?: React.ReactNode;
@@ -18,4 +18,3 @@ export const Main = ({ children, ...props }: MainProps) => {
     </StyledMain>
   );
 };
-

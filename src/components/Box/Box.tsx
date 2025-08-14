@@ -1,10 +1,21 @@
-import React from "react";
-import { SpaceProps, FlexboxProps, GridProps, LayoutProps, BorderProps } from 'styled-system';
+import React from 'react';
+import {
+  SpaceProps,
+  FlexboxProps,
+  GridProps,
+  LayoutProps,
+  BorderProps,
+} from 'styled-system';
 
 // Styles
-import { StyledBox } from "./styles";
+import { StyledBox } from './styles';
 
-interface BoxProps extends SpaceProps, FlexboxProps, GridProps, LayoutProps, BorderProps {
+interface BoxProps
+  extends SpaceProps,
+    FlexboxProps,
+    GridProps,
+    LayoutProps,
+    BorderProps {
   children?: React.ReactNode;
   fluid?: boolean;
   as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
@@ -18,4 +29,3 @@ export const Box: React.FC<BoxProps> = ({ children, fluid, ...props }) => {
     </StyledBox>
   );
 };
-

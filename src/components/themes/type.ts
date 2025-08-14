@@ -9,4 +9,4 @@ export const type = {
   titleSize: '1.5rem',
   bodySize: '1.25rem',
   infoSize: '0.875rem',
-}
+};

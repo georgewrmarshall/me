@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
-import { lightTheme } from "../themes";
+import styled, { css } from 'styled-components';
+import { lightTheme } from '../themes';
 
 export const StyledButtonBase = styled.button`
-  ${(props) => css`
+  ${props => css`
     background: transparent;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -20,15 +20,17 @@ export const StyledButtonBase = styled.button`
     transition: 0.3s;
     text-decoration: none;
   `}
-`
+`;
 
 export const StyledButton = styled(StyledButtonBase)`
-  ${(props) => css`
+  ${props => css`
     color: ${props.theme.buttonPrimary.color};
     background: ${props.theme.buttonPrimary.backgroundColor};
     padding: 0 ${`${props.theme.space[4]}px`};
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
       background: ${props.theme.buttonPrimary.backgroundColorHover};
       color: ${props.theme.buttonPrimary.color};
     }

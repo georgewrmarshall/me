@@ -11,5 +11,5 @@ export const StyledRocket = styled.div`
 `;
 
 StyledRocket.defaultProps = {
-  theme: lightTheme
-}
+  theme: lightTheme,
+};

@@ -11,5 +11,5 @@ export const StyledVanbex = styled.div`
 `;
 
 StyledVanbex.defaultProps = {
-  theme: lightTheme
-}
+  theme: lightTheme,
+};

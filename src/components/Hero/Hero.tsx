@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 import { Display, Title, Container } from '..';
-import { StyledHero } from "./styles";
+import { StyledHero } from './styles';
 
 interface HeroProps {
   header?: string;
@@ -17,10 +17,13 @@ export const Hero = ({ header, description, ...props }: HeroProps) => {
   return (
     <StyledHero loaded={loaded} {...props}>
       <Container>
-        <Display as="h1"><span>{header}</span></Display>
-        <Title as="p"><span>{description}</span></Title>
+        <Display as="h1">
+          <span>{header}</span>
+        </Display>
+        <Title as="p">
+          <span>{description}</span>
+        </Title>
       </Container>
     </StyledHero>
   );
 };
-

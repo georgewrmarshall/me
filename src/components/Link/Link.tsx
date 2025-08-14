@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { StyledLinkPrimary } from "./styles";
+import { StyledLinkPrimary } from './styles';
 
 interface LinkProps {
   onClick?: () => void;
@@ -15,4 +15,3 @@ export const Link = ({ onClick, children, ...props }: LinkProps) => {
     </StyledLinkPrimary>
   );
 };
-

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { StyledBody } from "./styles";
+import { StyledBody } from './styles';
 
 interface BodyProps {
   children?: React.ReactNode;
@@ -8,9 +8,5 @@ interface BodyProps {
 }
 
 export const Body = ({ children, ...props }: BodyProps) => {
-  return (
-    <StyledBody {...props}>
-      {children}
-    </StyledBody>
-  );
+  return <StyledBody {...props}>{children}</StyledBody>;
 };

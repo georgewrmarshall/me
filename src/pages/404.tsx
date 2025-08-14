@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react';
 
-import { SEO, Layout, Navbar, Footer, NotFound } from "../components"
+import { SEO, Layout, Navbar, Footer, NotFound } from '../components';
 
 const NotFoundPage: React.FC = () => (
   <>
@@ -11,6 +11,6 @@ const NotFoundPage: React.FC = () => (
       <Footer />
     </Layout>
   </>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;

@@ -11,11 +11,18 @@ interface CalloutProps {
   [key: string]: any;
 }
 
-export const Callout = ({ header, btnText, btnLink, ...props }: CalloutProps) => {
+export const Callout = ({
+  header,
+  btnText,
+  btnLink,
+  ...props
+}: CalloutProps) => {
   return (
     <StyledCallout {...props}>
       <Container>
-        <Headline mb={4} as="h2">{header}</Headline>
+        <Headline mb={4} as="h2">
+          {header}
+        </Headline>
         <Button as={GLink} to={btnLink}>
           {btnText}
         </Button>
@@ -23,4 +30,3 @@ export const Callout = ({ header, btnText, btnLink, ...props }: CalloutProps) =>
     </StyledCallout>
   );
 };
-

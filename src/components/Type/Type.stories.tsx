@@ -24,7 +24,7 @@ export default meta;
 type Story = StoryObj<TypographyProps>;
 
 export const TypeRamp: Story = {
-  render: (args) => (
+  render: args => (
     <>
       <Display mb={4}>
         {args.children || `Display D/4rem(64px) M/3rem(48px)`}

@@ -106,9 +106,7 @@ export const Footer = () => {
             </svg>
           </li>
         </ul>
-        <Info>
-          George Marshall | Front-end Developer &amp; Designer
-        </Info>
+        <Info>George Marshall | Front-end Developer &amp; Designer</Info>
       </Container>
     </StyledFooter>
   );

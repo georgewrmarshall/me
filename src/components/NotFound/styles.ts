@@ -11,5 +11,5 @@ export const StyledNotFound = styled.div`
 `;
 
 StyledNotFound.defaultProps = {
-  theme: lightTheme
-}
+  theme: lightTheme,
+};

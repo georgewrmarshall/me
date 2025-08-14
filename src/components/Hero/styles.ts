@@ -25,7 +25,9 @@ export const StyledHero = styled.header<StyledHeroProps>`
         display: block;
         transform: ${props.loaded ? 'translateY(0)' : 'translateY(100%)'};
         opacity: ${props.loaded ? '1' : '0'};
-        transition: transform 0.3s, opacity 0.3s;
+        transition:
+          transform 0.3s,
+          opacity 0.3s;
       }
     }
 
@@ -37,7 +39,9 @@ export const StyledHero = styled.header<StyledHeroProps>`
         display: block;
         transform: ${props.loaded ? 'translateY(0)' : 'translateY(100%)'};
         opacity: ${props.loaded ? '1' : '0'};
-        transition: transform 0.5s, opacity 0.5s;
+        transition:
+          transform 0.5s,
+          opacity 0.5s;
         transition-delay: 0.1s;
       }
     }

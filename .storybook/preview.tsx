@@ -44,7 +44,7 @@ const withThemeProvider = (Story: any, context: any) => {
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
-  backgrounds: { disable: true }
+  backgrounds: { disable: true },
 };
 
 export const globalTypes = {

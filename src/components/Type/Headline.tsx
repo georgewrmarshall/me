@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { StyledHeadline } from "./styles";
+import { StyledHeadline } from './styles';
 
 interface HeadlineProps {
   children?: React.ReactNode;
@@ -8,9 +8,5 @@ interface HeadlineProps {
 }
 
 export const Headline = ({ children, ...props }: HeadlineProps) => {
-  return (
-    <StyledHeadline {...props}>
-      {children}
-    </StyledHeadline>
-  );
+  return <StyledHeadline {...props}>{children}</StyledHeadline>;
 };

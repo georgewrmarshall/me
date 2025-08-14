@@ -7,7 +7,7 @@ export const buttonBase = {
   color: colorsTheme.bodyFontColor,
   backgroundColor: 'transparent',
   borderColor: colorsTheme.borderColor,
-}
+};
 
 export const buttonPrimary = {
   backgroundColor: colorsTheme.primary,
@@ -15,5 +15,6 @@ export const buttonPrimary = {
   color: colorsTheme.white,
   colorDisabled: colorsTheme.white,
   borderColor: colorsTheme.primary,
-  backgroundColorDisabled: (): string => colorsTheme.disabledFn(colorsTheme.primary),
-}
+  backgroundColorDisabled: (): string =>
+    colorsTheme.disabledFn(colorsTheme.primary),
+};

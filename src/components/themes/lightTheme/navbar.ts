@@ -9,4 +9,4 @@ export const navbar = {
   backgroundColor: colorsTheme.white,
   menuBackgroundColor: lightenDarkenColor(colorsTheme.black, 224),
   fontFamily: type.fontFamilyNav,
-}
+};

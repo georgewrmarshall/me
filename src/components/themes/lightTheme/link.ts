@@ -5,7 +5,7 @@ export const linkBase = {
   fontSize: type.infoSize,
   color: colorsTheme.bodyFontColor,
   hoverColor: colorsTheme.primary,
-}
+};
 
 export const linkPrimary = {
   borderColor: colorsTheme.primary,
@@ -13,4 +13,4 @@ export const linkPrimary = {
   color: colorsTheme.bodyFontColor,
   colorHover: colorsTheme.primary,
   colorVisited: colorsTheme.bodyFontColor,
-}
+};

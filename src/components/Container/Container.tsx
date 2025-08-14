@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { StyledContainer } from "./styles";
+import { StyledContainer } from './styles';
 
 interface ContainerProps {
   children?: React.ReactNode;
@@ -15,4 +15,3 @@ export const Container = ({ children, fluid, ...props }: ContainerProps) => {
     </StyledContainer>
   );
 };
-

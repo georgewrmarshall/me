@@ -33,15 +33,12 @@ const config: GatsbyConfig = {
     },
     {
       resolve: `gatsby-plugin-styled-components`,
-      options: {
-      },
+      options: {},
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Playfair Display\:900`,
-        ],
+        fonts: [`Playfair Display\:900`],
         display: 'swap',
       },
     },
@@ -49,7 +46,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-179014368-1",
+        trackingId: 'UA-179014368-1',
       },
     },
   ],

@@ -10,14 +10,14 @@ interface PaginationProps {
   [key: string]: any;
 }
 
-export const Pagination = ({ linkPrev, linkNext, ...props }: PaginationProps) => {
+export const Pagination = ({
+  linkPrev,
+  linkNext,
+  ...props
+}: PaginationProps) => {
   return (
     <StyledPagination {...props}>
-      {linkPrev && (
-        <Link to={linkPrev}>
-          ← Prev Project
-        </Link>
-      )}
+      {linkPrev && <Link to={linkPrev}>← Prev Project</Link>}
       {linkNext && (
         <Link to={linkNext} ml="auto">
           Next Project →

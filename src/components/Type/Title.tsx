@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { StyledTitle } from "./styles";
+import { StyledTitle } from './styles';
 
 interface TitleProps {
   children?: React.ReactNode;
@@ -8,9 +8,5 @@ interface TitleProps {
 }
 
 export const Title = ({ children, ...props }: TitleProps) => {
-  return (
-    <StyledTitle {...props}>
-      {children}
-    </StyledTitle>
-  );
+  return <StyledTitle {...props}>{children}</StyledTitle>;
 };

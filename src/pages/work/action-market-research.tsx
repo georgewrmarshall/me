@@ -1,6 +1,12 @@
 import React from 'react';
 
-import { SEO, Layout, Navbar, ActionMarketResearch, Footer } from '../../components';
+import {
+  SEO,
+  Layout,
+  Navbar,
+  ActionMarketResearch,
+  Footer,
+} from '../../components';
 
 const ActionMarketResearchPage = () => (
   <>

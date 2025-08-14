@@ -11,5 +11,5 @@ export const StyledActionMarketResearch = styled.div`
 `;
 
 StyledActionMarketResearch.defaultProps = {
-  theme: lightTheme
-}
+  theme: lightTheme,
+};

@@ -66,17 +66,19 @@ export const StyledThemeToggle = styled.div<StyledThemeToggleProps>`
     ${props =>
       props.darkMode
         ? css`
-          /* Switch Rail */
-          &:before {
-            background-color: ${props.theme.themeToggle.railOnBackgroundColor};
-          }
+            /* Switch Rail */
+            &:before {
+              background-color: ${props.theme.themeToggle
+                .railOnBackgroundColor};
+            }
 
-          /* Switch Knob */
-          &:after {
-            left: 24px;
-            background-color: ${props.theme.themeToggle.knobOnBackgroundColor};
-          }
-        `
+            /* Switch Knob */
+            &:after {
+              left: 24px;
+              background-color: ${props.theme.themeToggle
+                .knobOnBackgroundColor};
+            }
+          `
         : undefined}
   }
 `;

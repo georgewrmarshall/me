@@ -13,7 +13,7 @@ export const StyledNavbar = styled.nav<StyledNavbarProps>`
   z-index: 1030;
   height: 64px;
 
-  ${(props) => css`
+  ${props => css`
     @media ${props.theme.minWidth.md} {
       height: 120px;
     }
@@ -32,18 +32,20 @@ export const StyledNavbar = styled.nav<StyledNavbarProps>`
     svg {
       path {
         transition: 0.3s;
-        fill: ${(props) => props.theme.navbar.brandColor};
+        fill: ${props => props.theme.navbar.brandColor};
       }
     }
-    &:hover, &:focus, :active {
+    &:hover,
+    &:focus,
+    :active {
       path {
-        fill: ${(props) => props.theme.navbar.brandColorHover};
-      } 
+        fill: ${props => props.theme.navbar.brandColorHover};
+      }
     }
   }
 
   .toggle {
-    ${(props) => css`
+    ${props => css`
       display: block;
       @media ${props.theme.minWidth.md} {
         display: none;
@@ -52,7 +54,7 @@ export const StyledNavbar = styled.nav<StyledNavbarProps>`
   }
 
   .menu {
-    ${(props) => css`
+    ${props => css`
       @media ${props.theme.maxWidth.md} {
         position: fixed;
         top: ${props.show ? 0 : '1.5rem'};
@@ -67,11 +69,13 @@ export const StyledNavbar = styled.nav<StyledNavbarProps>`
         display: flex;
         align-items: center;
         justify-content: center;
-        background: ${props.show ? props.theme.navbar.menuBackgroundColor : 'transparent'};
+        background: ${props.show
+          ? props.theme.navbar.menuBackgroundColor
+          : 'transparent'};
       }
     `}
 
-    ${(props) => css`
+    ${props => css`
       @media ${props.theme.minWidth.md} {
         order: 1;
       }
@@ -83,7 +87,7 @@ export const StyledNavbar = styled.nav<StyledNavbarProps>`
       list-style: none;
       display: flex;
 
-      ${(props) => css`
+      ${props => css`
         @media ${props.theme.maxWidth.md} {
           flex-direction: column;
         }
@@ -97,7 +101,7 @@ export const StyledNavbar = styled.nav<StyledNavbarProps>`
       display: flex;
       align-items: center;
 
-      ${(props) => css`
+      ${props => css`
         @media ${props.theme.maxWidth.md} {
           justify-content: center;
           padding: 1rem;

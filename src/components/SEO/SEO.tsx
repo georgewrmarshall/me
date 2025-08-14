@@ -15,7 +15,7 @@ interface MetaItem {
   content: string;
 }
 
-type HelmetMetaItem = 
+type HelmetMetaItem =
   | { name: string; content: string; property?: undefined }
   | { property: string; content: string; name?: undefined };
 
@@ -36,25 +36,28 @@ interface StaticQueryData {
   };
 }
 
-export const SEO: React.FC<SEOProps> = ({ description, lang = 'en', meta = [], title }) => {
-  const { site }: StaticQueryData = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
+export const SEO: React.FC<SEOProps> = ({
+  description,
+  lang = 'en',
+  meta = [],
+  title,
+}) => {
+  const { site }: StaticQueryData = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
         }
       }
-    `
-  );
+    }
+  `);
 
   const metaDescription = description || site.siteMetadata.description;
 
   const HelmetComponent = Helmet as any;
-  
+
   return (
     <HelmetComponent
       htmlAttributes={{
@@ -102,9 +105,8 @@ export const SEO: React.FC<SEOProps> = ({ description, lang = 'en', meta = [], t
           } else {
             return { property: item.property || '', content: item.content };
           }
-        })
+        }),
       )}
     />
   );
 };
-

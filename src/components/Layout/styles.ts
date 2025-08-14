@@ -48,7 +48,6 @@ export const GlobalStyle = createGlobalStyle`
 
     li,
     p {
-
       a {
         text-decoration: none;
         display: inline-block;

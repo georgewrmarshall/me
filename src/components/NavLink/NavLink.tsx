@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { StyledNavLink } from "./styles";
+import { StyledNavLink } from './styles';
 
 interface NavLinkProps {
   children?: React.ReactNode;
@@ -10,9 +10,5 @@ interface NavLinkProps {
 }
 
 export const NavLink = ({ children, ...props }: NavLinkProps) => {
-  return (
-    <StyledNavLink {...(props as any)}>
-      {children}
-    </StyledNavLink>
-  );
+  return <StyledNavLink {...(props as any)}>{children}</StyledNavLink>;
 };

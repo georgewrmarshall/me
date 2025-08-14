@@ -6,7 +6,7 @@ interface StyledMainProps {
 }
 
 export const StyledMain = styled.main<StyledMainProps>`
-  ${(props) => css`
+  ${props => css`
     opacity: ${props.loaded ? '1' : '0'};
     transition: opacity 0.5s;
     transition-delay: 0.5s;

@@ -7,5 +7,4 @@ export const logo = {
   colorDarker: lightenDarkenColor(colorsTheme.blueDark, -24), //'#303140',
   colorDark: lightenDarkenColor(colorsTheme.blueDark, -16), //'#3A3B4A',
   colorLight: colorsTheme.blueDark, //'#454653'
-}
-
+};

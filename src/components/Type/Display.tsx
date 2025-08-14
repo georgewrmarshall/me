@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { StyledDisplay } from "./styles";
+import { StyledDisplay } from './styles';
 
 interface DisplayProps {
   children?: React.ReactNode;
@@ -8,9 +8,5 @@ interface DisplayProps {
 }
 
 export const Display = ({ children, ...props }: DisplayProps) => {
-  return (
-    <StyledDisplay {...props}>
-      {children}
-    </StyledDisplay>
-  );
+  return <StyledDisplay {...props}>{children}</StyledDisplay>;
 };
