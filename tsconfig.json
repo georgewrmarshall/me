@@ -1,28 +1,68 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "ES2018",
     "lib": ["dom", "dom.iterable", "es6"],
+=======
+    "target": "ES2020",
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+>>>>>>> 5ab26ce (chore: migrate to typescript)
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+<<<<<<< HEAD
+=======
+    "noFallthroughCasesInSwitch": true,
+    "module": "ESNext",
+>>>>>>> 5ab26ce (chore: migrate to typescript)
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
     "declaration": false,
+<<<<<<< HEAD
     "noFallthroughCasesInSwitch": true
   },
   "include": [
     "src/**/*",
+=======
+    "declarationMap": false,
+    "sourceMap": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes": false,
+    "types": ["node", "react", "react-dom"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/components/*": ["src/components/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/assets/*": ["src/assets/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "gatsby-*.js",
+>>>>>>> 5ab26ce (chore: migrate to typescript)
     ".storybook/**/*"
   ],
   "exclude": [
     "node_modules",
     "public",
+<<<<<<< HEAD
     ".cache"
+=======
+    ".cache",
+    "dist",
+    "build"
+>>>>>>> 5ab26ce (chore: migrate to typescript)
   ]
 }
