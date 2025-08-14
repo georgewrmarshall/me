@@ -4,10 +4,6 @@ import { Box } from './Box';
 const meta = {
   title: 'Components/Box',
   component: Box,
-  parameters: {
-    layout: 'centered',
-  },
-
   argTypes: {
     fluid: {
       control: 'boolean',
@@ -27,6 +23,5 @@ export const Default: Story = {
   args: {
     children: 'Box',
     padding: 4,
-    backgroundColor: '#f0f0f0',
   },
 };
