@@ -15,6 +15,10 @@ interface MetaItem {
   content: string;
 }
 
+type HelmetMetaItem = 
+  | { name: string; content: string; property?: undefined }
+  | { property: string; content: string; name?: undefined };
+
 interface SEOProps {
   description?: string;
   lang?: string;
@@ -91,7 +95,15 @@ export const SEO: React.FC<SEOProps> = ({ description, lang = 'en', meta = [], t
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta || [])}
+      ].concat(
+        meta.map((item): HelmetMetaItem => {
+          if (item.name) {
+            return { name: item.name, content: item.content };
+          } else {
+            return { property: item.property || '', content: item.content };
+          }
+        })
+      )}
     />
   );
 };

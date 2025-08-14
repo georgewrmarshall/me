@@ -2,14 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Card } from './Card';
 import placeholderImg from '../../assets/images/placholder.jpg';
 
-interface CardProps {
-  header?: string;
-  info?: string;
-  description?: string;
-  imgSrc?: string;
-  link?: string;
-  to?: string; // Additional prop that might be passed through
-}
+type CardProps = React.ComponentProps<typeof Card>;
 
 const meta: Meta<CardProps> = {
   title: 'Components/Card',
@@ -35,6 +28,6 @@ export const Default: Story = {
     info: 'info',
     description: 'This is the description of the card',
     imgSrc: placeholderImg,
-    to: '#',
+    link: '#',
   },
 };
